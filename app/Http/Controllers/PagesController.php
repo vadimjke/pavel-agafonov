@@ -20,7 +20,7 @@ class PagesController extends Controller
         // ->get();
 
 
-        return view('map')->with('datas', $datas);
+        return view('map')->with('datas', $datas)->with('year', '2021')->with('quarter', '4');
         // ->with('quarters', $quarters);
 
     }
