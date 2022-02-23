@@ -48,11 +48,17 @@ google.charts.load('current', {
 
 
   function createCustomHTMLContent(name, value, median) {
+    if(value<4.1) {
+      value = '<span style="color:green; font-size: 22px;">'+value+'</span>';
+    }
+    else {
+      value = '<span style="color:red; font-size: 22px;">'+value+'</span>';
+    }
     return '<div>' +
         '<h1>' + name +
-        '</h1>' + 
+        '</h1>' + '<hr>' + 
         '<p>Упоминаний о коррупции на человека: <b>' + value + '</b></p>' +
-        '<p>Медианный показатель по миру: <b>' + median + '</b></p>';
+        '<p>Медианный показатель по миру: <b style="font-size: 22px;">' + median + '</b></p>';
   }
 
     </script>

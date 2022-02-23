@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,9 +33,32 @@
           <a class="nav-link {{ (request()->is('support')) ? 'active' : '' }}" href="/support">Поддержать</a>
         </li>
       </ul>
-      <div style="width: 250px;">&nbsp;</div>
-      <div style="width: 250px;">&nbsp;</div>
-      <div style="width: 250px;">&nbsp;</div>
+      @if (request()->is('map'))
+      <div class="d-flex gap-2" style="width: 600px;">
+            <select class="form-select">
+                <option selected value="2021">2021 год</option>
+            </select>
+            <select class="form-select">
+                <option selected value="1">I квартал</option>
+                <option value="2">II квартал</option>
+            </select>
+            <select class="form-select">
+                <option selected value="english">Английский</option>
+                <option value="spanish">Испанский</option>
+                <option value="arabic">Арабский</option>
+                <option value="chinese">Китайский</option>
+            </select>
+            <button type="button" class="btn btn-secondary">Показать</button>
+      </div>
+      @else
+      <div style="width: 600px;">&nbsp;</div>
+      @endif
+      <div class="d-flex" style="width: 200px;">
+        &nbsp;
+      </div>
+      <div class="d-flex justify-content-end" style="width: 200px;">
+        <button type="button" class="btn btn-primary" style="float:right;">Войти</button>
+      </div>
     </div>
   </div>
 </nav>
