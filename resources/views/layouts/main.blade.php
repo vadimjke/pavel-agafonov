@@ -27,7 +27,7 @@
           <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="/">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ (request()->is('map')) ? 'active' : '' }}" href="/map">Карта</a>
+          <a class="nav-link {{ (request()->is('map')) ? 'active' : '' }}" href="/map">ИУК</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('support')) ? 'active' : '' }}" href="/support">Поддержать</a>
@@ -39,8 +39,13 @@
                 <option selected value="2021">2021 год</option>
             </select>
             <select class="form-select">
-                <option selected value="1">I квартал</option>
-                <option value="2">II квартал</option>
+                @foreach($quarters as $quarter)
+                <option 
+                @if($loop->first) 
+                    selected 
+                @endif
+                    value="{{$quarter->quarter}}">{{$quarter->quarter}} квартал</option>
+                @endforeach
             </select>
             <select class="form-select">
                 <option selected value="english">Английский</option>
@@ -57,7 +62,15 @@
         &nbsp;
       </div>
       <div class="d-flex justify-content-end" style="width: 200px;">
-        <button type="button" class="btn btn-primary" style="float:right;">Войти</button>
+      @guest
+        <a href="/login" class="btn btn-outline-light" style="float:right;">Войти</a>
+        @endguest
+        @auth
+        <ul  class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link {{ (request()->is('dashboard')) ? 'active' : '' }}" href="/dashboard">Настройки</a>
+</li></ul>
+            @endauth
       </div>
     </div>
   </div>

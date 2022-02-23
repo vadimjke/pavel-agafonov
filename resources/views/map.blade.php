@@ -22,12 +22,12 @@ google.charts.load('current', {
   dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
     dataTable.addRows([
         @foreach ($datas as $data)
-        ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', '4.1')],
+        ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', '3.8')],
         @endforeach
     ]);
 
     var options = {
-      colorAxis: {colors: ['#edae3d', '#a22922']},
+      colorAxis: {minValue: 0, maxValue: 1, colors: ['#FFFF00', '#FFBF00', '#FF8000', '#FF4000', '#FF0000']},
       backgroundColor: '#81d4fa',
       datalessRegionColor: '#fff',
       focusTarget: 'category',
@@ -39,7 +39,22 @@ google.charts.load('current', {
       geochartVersion: '10'
     };
 
-    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+    var chartItem = document.getElementById('regions_div');
+
+    var chart = new google.visualization.GeoChart(chartItem);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     chart.draw(dataTable, options);
   }
@@ -48,7 +63,7 @@ google.charts.load('current', {
 
 
   function createCustomHTMLContent(name, value, median) {
-    if(value<4.1) {
+    if(value<3.8) {
       value = '<span style="color:green; font-size: 22px;">'+value+'</span>';
     }
     else {
@@ -72,6 +87,9 @@ google.charts.load('current', {
 
 
 
+<div class="container-xxl mt-3 mb-3 px-4 py-4 rounded-3">
+<h1>Индекс упоминания о коррупции в Google:</h1>
+</div>
 
 
 
@@ -84,10 +102,6 @@ google.charts.load('current', {
 
 
 
-
-
-
-
-       <div id="regions_div"></div>
+       <div class="mb-5" id="regions_div"></div>
 
 @endsection

@@ -15,17 +15,17 @@ class CustomAuthController extends Controller
     public function customLogin(Request $request)
     {
         $request->validate([
-            'email' => 'required',
+            'name' => 'required',
             'password' => 'required',
         ]);
    
-        $credentials = $request->only('email', 'password');
+        $credentials = $request->only('name', 'password');
         if (Auth::attempt($credentials)) {
             return redirect()->intended('dashboard')
                         ->withSuccess('Signed in');
         }
   
-        return redirect("login")->withSuccess('Login details are not valid');
+        return redirect("login")->withSuccess('Данные введены некорректно');
     }
 
     public function registration()
@@ -56,14 +56,6 @@ class CustomAuthController extends Controller
       ]);
     }    
     
-    public function dashboard()
-    {
-        if(Auth::check()){
-            return view('dashboard');
-        }
-  
-        return redirect("login")->withSuccess('You are not allowed to access');
-    }
     
     public function signOut() {
         Session::flush();
