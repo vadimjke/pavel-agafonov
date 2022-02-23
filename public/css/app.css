@@ -3,9 +3,7 @@
     list-style: none!important;
 
     opacity: 0.9;
-    min-width: 500px;
-    
-
+    min-width: 600px;
     
 
 }
@@ -21,7 +19,12 @@
 
 .google-visualization-tooltip-item p
 {
-font-size: 18px;
+font-size: 14px;
+line-height: 15px;
+}
+.google-visualization-tooltip-item h1
+{
+font-size: 26px;
 }
 
 .google-visualization-tooltip-item-list .google-visualization-tooltip-item:first-child 

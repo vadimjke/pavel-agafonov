@@ -95,6 +95,8 @@
 
 <!-- JS -->
 <script src="{{ asset('js/script.js') }}"></script>
-    
+<script src="{{ asset('js/isoConvert.js') }}"></script>
+
+
 </body>
 </html>

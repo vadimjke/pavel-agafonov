@@ -32,8 +32,9 @@ google.charts.load('current', {
   dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
     dataTable.addRows([
 
+
         @foreach ($datas as $data)
-          ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', medianL, '{{$loop->iteration}}')],
+          ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', medianL, '{{$loop->iteration}}', '{{$data->population}}', '{{$data->name}}', '{{$data->mentions}}')],
         @endforeach
     ]);
 
@@ -73,12 +74,12 @@ google.charts.load('current', {
 
 
 
-  function createCustomHTMLContent(name, value, median, diff) {
+  function createCustomHTMLContent(name, value, median, diff, population, isoCode, mentions) {
     if(value<3.8) {
-      formatValue = '<span style="color:green; font-size: 18px;">'+value+'</span>';
+      formatValue = '<span style="color:green;">'+value+'</span>';
     }
     else {
-      formatValue = '<span style="color:red; font-size: 18px;">'+value+'</span>';
+      formatValue = '<span style="color:red;">'+value+'</span>';
     }
 
 
@@ -94,19 +95,24 @@ google.charts.load('current', {
       valueSign = '<b style="color:red">' + oldValue[diff] +  ' > ' + value + '</b>';
     }
 
+
     return '<div>' +
         '<h1>' + name +
         '</h1>' + '<hr>' + 
         '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
-        '<p>Медианный показатель по миру: <b style="font-size: 18px;">' + median + '</b></p>' +
-        '<p>Изменение за квартал: ' +  valueSign;
+        '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
+        '<p>Изменение за квартал: ' +  valueSign +
+        '<p>Упоминания о коррупции по запросу "<b><i>'+ getCountryName(isoCode) + ' corruption"</i></b>: ' + mentions +
+        '<p>Население: <b>' + population + '</b> тысяч человек';
 
     @else 
     return '<div>' +
         '<h1>' + name +
         '</h1>' + '<hr>' + 
         '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
-        '<p>Медианный показатель по миру: <b style="font-size: 18px;">' + median + '</b></p>';
+        '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
+        '<p>Упоминания о коррупции по запросу "<b><i>'+ getCountryName(isoCode) + ' corruption"</i></b>: ' + mentions +
+        '<p>Население: <b>' + population + '</b> тысяч человек';
     @endif
   }
 
