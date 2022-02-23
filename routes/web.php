@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,6 @@ use App\Http\Controllers\TestController;
 |
 */
 
-Route::get('/', [TestController::class, 'test']);
+Route::get('/', [PagesController::class, 'home']);
+Route::get('/map', [PagesController::class, 'map']);
+Route::get('/support', [PagesController::class, 'support']);

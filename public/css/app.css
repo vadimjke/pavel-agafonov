@@ -28,3 +28,7 @@ font-size: 18px;
 {
     display: none; 
 }
+
+#regions_div {
+    width: 100%; height: 93vh; margin: 0 auto;
+   }

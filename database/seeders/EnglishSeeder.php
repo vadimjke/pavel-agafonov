@@ -1623,6 +1623,16 @@ class EnglishSeeder extends Seeder
             [
                 'year' => '2021',
                 'quarter' => '1',
+                'population' => '771',
+                'mentions' => '8480000',
+                'name' => 'BT',
+                'display_name' => 'Бутан',
+                'value' => '11.0',
+                'pentil' => '0.8'
+            ],
+            [
+                'year' => '2021',
+                'quarter' => '1',
                 'population' => '540',
                 'mentions' => '12600000',
                 'name' => 'MV',
