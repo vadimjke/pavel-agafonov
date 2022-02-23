@@ -558,7 +558,7 @@ class EnglishSeeder extends Seeder
                 'name' => 'PT',
                 'display_name' => 'Португалия',
                 'value' => '7.4',
-                'pentil' => '0.1'
+                'pentil' => '0.8'
             ],
             [
                 'year' => '2021',

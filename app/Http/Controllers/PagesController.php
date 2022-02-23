@@ -31,7 +31,6 @@ class PagesController extends Controller
     {
 
         return view('index');
-
     }
 
 
@@ -40,7 +39,6 @@ class PagesController extends Controller
     {
 
         return view('support');
-
     }
 
     public function SelectMap(Request $request)
@@ -51,8 +49,7 @@ class PagesController extends Controller
 
         // dd($request);
 
-        return redirect('/map/'.$year.'/'.$quarter.'/'.$language);
-
+        return redirect('/map/' . $year . '/' . $quarter . '/' . $language);
     }
 
 
@@ -63,27 +60,34 @@ class PagesController extends Controller
             ['year', "=", $year],
         ])->get();
 
-        return view('map')
-        ->with('datas', $datas)
-        ->with('quarter', $quarter)
-        ->with('year', $year);
+        if ($year == "2022") {
+            $old_data = DB::select("select value from english WHERE year = 2021");
 
+            for($i=0; $i<count($old_data); $i++) {
+                $values[$i] = $old_data[$i]->value;
+            }
+
+            return view('map')
+                ->with('datas', $datas)
+                ->with('quarter', $quarter)
+                ->with('year', $year)
+                ->with('values', $values);
+        } else {
+            return view('map')
+                ->with('datas', $datas)
+                ->with('quarter', $quarter)
+                ->with('year', $year);
+        }
     }
 
 
 
     public function dashboard()
     {
-        if(Auth::check()){
+        if (Auth::check()) {
             return view('dashboard');
         }
-  
+
         return redirect("login")->withSuccess('Вам необходимо сперва залогиниться');
     }
-
-
-
-
-
-
 }

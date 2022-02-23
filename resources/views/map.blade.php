@@ -6,6 +6,15 @@
     <script type="text/javascript">
 
 
+var oldValue = [];
+@if($year == "2022")
+    @foreach($values as $value)
+      oldValue.push('{{$value}}');
+    @endforeach
+    var medianL = '4.1';
+@else
+    var medianL = '3.8';
+@endif
 
 
 google.charts.load('current', {
@@ -22,8 +31,9 @@ google.charts.load('current', {
     // A column for custom tooltip content
   dataTable.addColumn({'type': 'string', 'role': 'tooltip', 'p': {'html': true}});
     dataTable.addRows([
+
         @foreach ($datas as $data)
-        ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', '3.8')],
+          ['{{$data->name}}', {{$data->pentil}}, createCustomHTMLContent('{{$data->display_name}}', '{{$data->value}}', medianL, '{{$loop->iteration}}')],
         @endforeach
     ]);
 
@@ -63,18 +73,41 @@ google.charts.load('current', {
 
 
 
-  function createCustomHTMLContent(name, value, median) {
+  function createCustomHTMLContent(name, value, median, diff) {
     if(value<3.8) {
-      value = '<span style="color:green; font-size: 22px;">'+value+'</span>';
+      formatValue = '<span style="color:green; font-size: 18px;">'+value+'</span>';
     }
     else {
-      value = '<span style="color:red; font-size: 22px;">'+value+'</span>';
+      formatValue = '<span style="color:red; font-size: 18px;">'+value+'</span>';
     }
+
+
+    @if($year == 2022)
+
+    if (oldValue[diff] > value) {
+      valueSign = '<b style="color:green">' + oldValue[diff] +  ' > ' + value + '</b>';
+    }
+    else if (oldValue[diff] == value) {
+      valueSign = '<b style="color:black">' + oldValue[diff] +  ' = ' + value + '</b>';
+    }
+    else {
+      valueSign = '<b style="color:red">' + oldValue[diff] +  ' > ' + value + '</b>';
+    }
+
     return '<div>' +
         '<h1>' + name +
         '</h1>' + '<hr>' + 
-        '<p>Упоминаний о коррупции на человека: <b>' + value + '</b></p>' +
-        '<p>Медианный показатель по миру: <b style="font-size: 22px;">' + median + '</b></p>';
+        '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
+        '<p>Медианный показатель по миру: <b style="font-size: 18px;">' + median + '</b></p>' +
+        '<p>Изменение за квартал: ' +  valueSign;
+
+    @else 
+    return '<div>' +
+        '<h1>' + name +
+        '</h1>' + '<hr>' + 
+        '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
+        '<p>Медианный показатель по миру: <b style="font-size: 18px;">' + median + '</b></p>';
+    @endif
   }
 
     </script>
