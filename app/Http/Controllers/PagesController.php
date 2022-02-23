@@ -14,13 +14,14 @@ class PagesController extends Controller
 
         $datas = English::orderBy('id', 'DESC')->get();
 
-        $quarters = DB::table('english')
-        ->select('quarter', DB::raw('count(*) as total'))
-        ->groupBy('quarter')
-        ->get();
+        // $quarters = DB::table('english')
+        // ->select('quarter', DB::raw('count(*) as total'))
+        // ->groupBy('quarter')
+        // ->get();
 
 
-        return view('map')->with('datas', $datas)->with('quarters', $quarters);
+        return view('map')->with('datas', $datas);
+        // ->with('quarters', $quarters);
 
     }
 
@@ -39,6 +40,33 @@ class PagesController extends Controller
     {
 
         return view('support');
+
+    }
+
+    public function SelectMap(Request $request)
+    {
+        $year = $request->year;
+        $quarter = $request->quarter;
+        $language = 'english';
+
+        // dd($request);
+
+        return redirect('/map/'.$year.'/'.$quarter.'/'.$language);
+
+    }
+
+
+    public function SelectedMap($year, $quarter, $language)
+    {
+        $datas = English::where([
+            ['quarter', "=", $quarter],
+            ['year', "=", $year],
+        ])->get();
+
+        return view('map')
+        ->with('datas', $datas)
+        ->with('quarter', $quarter)
+        ->with('year', $year);
 
     }
 

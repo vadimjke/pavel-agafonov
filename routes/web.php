@@ -16,12 +16,13 @@ use App\Http\Controllers\CustomAuthController;
 */
 
 Route::get('/', [PagesController::class, 'home']);
-Route::get('/map', [PagesController::class, 'map']);
 Route::get('/support', [PagesController::class, 'support']);
-
 
 Route::get('/test', [PagesController::class, 'test']);
 
+Route::get('/map', [PagesController::class, 'map']);
+Route::post('/map', [PagesController::class, 'SelectMap']);
+Route::get('/map/{year}/{quarter}/{language}', [PagesController::class, 'SelectedMap'])->name('SelectedMap'); 
 
 Route::get('dashboard', [PagesController::class, 'dashboard']); 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');

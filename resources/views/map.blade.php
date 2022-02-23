@@ -28,13 +28,13 @@ google.charts.load('current', {
     ]);
 
     var options = {
-      colorAxis: {minValue: 0, maxValue: 1, colors: ['#FFFF00', '#FFBF00', '#FF8000', '#FF4000', '#FF0000']},
+      colorAxis: {minValue: 0, maxValue: 1, colors: ['#00FF00', '#FFFF00', '#FFBF00', '#FF8000', '#FF4000', '#FF0000']},
       backgroundColor: '#81d4fa',
       datalessRegionColor: '#fff',
       focusTarget: 'category',
       tooltip: {isHtml: true},
       defaultColor: '#f5f5f5',
-      domain: 'Russia',
+      domain: 'PS',
       displayMode: 'regions',
       enableRegionInteractivity: 'true',
       geochartVersion: '10'
@@ -88,9 +88,19 @@ google.charts.load('current', {
 
 
 
-<div class="container-xxl mt-3 mb-3 px-4 py-4 rounded-3">
+<div class="container-xxl mt-3 mb-3 px-4 py-4 rounded-3 position-relative">
 <h1>Индекс упоминания о коррупции в Google:</h1>
-<small>Политические границы приблизительные и основаны на карте Google</small>
+<small>*Политические границы приблизительные и основаны на карте Google</small>
+@if(isset($year))
+<!-- <div class="position-absolute" style="right: -100px;bottom:0;"> -->
+<div class="position-fixed" id="mapNotation">
+  <h5>Данные за {{$quarter}} квартал {{$year}} года:</h5>
+</div>
+@else
+<div class="position-fixed" id="mapNotation">
+  <h5>Данные за 4 квартал 2021 года:</h5>
+</div>
+@endif
 </div>
 
 
@@ -104,6 +114,7 @@ google.charts.load('current', {
 
 
 
-       <div class="mb-5" id="regions_div"></div>
+       <div class="mb-5" id="regions_div">
+       </div>
 
 @endsection

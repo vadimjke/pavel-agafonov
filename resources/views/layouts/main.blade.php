@@ -27,33 +27,45 @@
           <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" aria-current="page" href="/">Главная</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ (request()->is('map')) ? 'active' : '' }}" href="/map">ИУК</a>
+          <a class="nav-link 
+          {{ (request()->is('map')) ? 'active' : '' }}
+          {{ (isset($quarter)) ? 'active' : '' }}
+          " 
+          href="/map">ИУК</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ (request()->is('support')) ? 'active' : '' }}" href="/support">Поддержать</a>
         </li>
       </ul>
-      @if (request()->is('map'))
-      <div class="d-flex gap-2" style="width: 600px;">
-            <select class="form-select">
+      @if (isset($datas))
+      <div style="width: 600px;">
+      <form action="/map/" method="POST" class="d-flex gap-2">
+        @csrf
+            <select class="form-select" id="mapYear" name="year">
+                @if(isset($year))
+                <option {{ ($year == '2021') ? 'selected' : '' }} value="2021">2021 год</option>
+                <option {{ ($year == '2022') ? 'selected' : '' }} value="2022">2022 год</option>
+                @else
                 <option selected value="2021">2021 год</option>
-            </select>
-            <select class="form-select">
-                @foreach($quarters as $quarter)
-                <option 
-                @if($loop->first) 
-                    selected 
+                <option value="2022">2022 год</option>
                 @endif
-                    value="{{$quarter->quarter}}">{{$quarter->quarter}} квартал</option>
-                @endforeach
+            </select>
+            <select class="form-select" id="mapKvartal" name="quarter">
+              @if(isset($quarter))
+              <option selected value="{{$quarter}}">{{$quarter}} квартал</option>
+              @else
+              <option selected value="4">4 квартал</option>
+              @endif
+             
             </select>
             <select class="form-select">
                 <option selected value="english">Английский</option>
-                <option value="spanish">Испанский</option>
+                <!-- <option value="spanish">Испанский</option>
                 <option value="arabic">Арабский</option>
-                <option value="chinese">Китайский</option>
+                <option value="chinese">Китайский</option> -->
             </select>
-            <button type="button" class="btn btn-secondary">Показать</button>
+            <button type="submit" class="btn btn-secondary">Показать</button>
+      </form>
       </div>
       @else
       <div style="width: 600px;">&nbsp;</div>
@@ -77,6 +89,12 @@
 </nav>
 
 @yield('content')
+
+<!-- Jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- JS -->
+<script src="{{ asset('js/script.js') }}"></script>
     
 </body>
 </html>
