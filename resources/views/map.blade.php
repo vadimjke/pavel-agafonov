@@ -33,7 +33,7 @@ google.charts.load('current', {
       focusTarget: 'category',
       tooltip: {isHtml: true},
       defaultColor: '#f5f5f5',
-      domain: 'RU',
+      domain: 'Denmark',
       displayMode: 'regions',
       enableRegionInteractivity: 'true',
       geochartVersion: '10'

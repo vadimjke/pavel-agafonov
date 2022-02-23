@@ -533,6 +533,16 @@ class EnglishSeeder extends Seeder
             [
                 'year' => '2021',
                 'quarter' => '1',
+                'population' => '5313',
+                'mentions' => '61100000',
+                'name' => 'SJ',
+                'display_name' => 'Норвегия',
+                'value' => '11.5',
+                'pentil' => '0.8'
+            ],
+            [
+                'year' => '2021',
+                'quarter' => '1',
                 'population' => '10221',
                 'mentions' => '75900000',
                 'name' => 'PT',
@@ -1979,6 +1989,24 @@ class EnglishSeeder extends Seeder
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
         // 2nd Quarter
         DB::table('english')->insert([
 
@@ -2508,6 +2536,16 @@ class EnglishSeeder extends Seeder
                 'population' => '5794',
                 'mentions' => '49300000',
                 'name' => 'DK',
+                'display_name' => 'Дания',
+                'value' => '8.5',
+                'pentil' => '0.8'
+            ],
+            [
+                'year' => '2021',
+                'quarter' => '2',
+                'population' => '5794',
+                'mentions' => '49300000',
+                'name' => 'GL',
                 'display_name' => 'Дания',
                 'value' => '8.5',
                 'pentil' => '0.8'
