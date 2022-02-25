@@ -21,8 +21,9 @@ return new class extends Migration
             $table->string('display_name');
             $table->integer('population');
             $table->bigInteger('mentions');
-            $table->string('pentil');
-            $table->string('value');
+            $table->float('pentil', 5, 3);
+            $table->float('value', 8, 4);
+            $table->float('diff', 5, 3)->nullable();
         });
     }
 

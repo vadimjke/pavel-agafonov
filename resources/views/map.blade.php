@@ -5,11 +5,11 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
-
 var oldValue = [];
 @if($year == "2022")
+
     @foreach($values as $value)
-      oldValue.push('{{$value}}');
+      oldValue.push('{{$value->value}}');
     @endforeach
     var medianL = '4.1';
 @else
@@ -75,6 +75,7 @@ google.charts.load('current', {
 
 
   function createCustomHTMLContent(name, value, median, diff, population, isoCode, mentions) {
+    diff = diff-1;
     if(value<3.8) {
       formatValue = '<span style="color:green;">'+value+'</span>';
     }
@@ -102,7 +103,8 @@ google.charts.load('current', {
         '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
         '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
         '<p>Изменение за квартал: ' +  valueSign +
-        '<p>Упоминания о коррупции по запросу "<b><i>'+ getCountryName(isoCode) + ' corruption"</i></b>: ' + mentions +
+        '<hr>' + 
+        '<p>Упоминания о коррупции по запросу "<b><i><u>'+ getCountryName(isoCode) + ' corruption</u></i></b>": ' + mentions +
         '<p>Население: <b>' + population + '</b> тысяч человек';
 
     @else 
@@ -111,7 +113,8 @@ google.charts.load('current', {
         '</h1>' + '<hr>' + 
         '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
         '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
-        '<p>Упоминания о коррупции по запросу "<b><i>'+ getCountryName(isoCode) + ' corruption"</i></b>: ' + mentions +
+        '<hr>' + 
+        '<p>Упоминания о коррупции по запросу "<b><i><u>'+ getCountryName(isoCode) + ' corruption</u></i></b>": ' + mentions +
         '<p>Население: <b>' + population + '</b> тысяч человек';
     @endif
   }

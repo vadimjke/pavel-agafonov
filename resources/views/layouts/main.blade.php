@@ -58,14 +58,16 @@
               @endif
              
             </select>
-            <select class="form-select">
-                <option selected value="english">Английский</option>
-                <!-- <option value="spanish">Испанский</option>
-                <option value="arabic">Арабский</option>
+            <select class="form-select" name="language">
+                <option {{ ($language == 'english') ? 'selected' : '' }} value="english">Английский</option>
+                <option {{ ($language == 'spanish') ? 'selected' : '' }} value="spanish">Испанский</option>
+                <!-- <option value="arabic">Арабский</option>
                 <option value="chinese">Китайский</option> -->
             </select>
             <button type="submit" class="btn btn-secondary">Показать</button>
       </form>
+
+      {{$language}}
       </div>
       @else
       <div style="width: 600px;">&nbsp;</div>
@@ -92,6 +94,9 @@
 
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <!-- JS -->
 <script src="{{ asset('js/script.js') }}"></script>

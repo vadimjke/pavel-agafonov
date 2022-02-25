@@ -12,7 +12,7 @@ class PagesController extends Controller
     public function map()
     {
 
-        $datas = English::orderBy('id', 'DESC')->get();
+        $datas = English::orderBy('id', 'ASC')->get();
 
         // $quarters = DB::table('english')
         // ->select('quarter', DB::raw('count(*) as total'))
@@ -20,7 +20,11 @@ class PagesController extends Controller
         // ->get();
 
 
-        return view('map')->with('datas', $datas)->with('year', '2021')->with('quarter', '4');
+        return view('map')
+        ->with('datas', $datas)
+        ->with('year', '2021')
+        ->with('quarter', '4')
+        ->with('language', 'english');
         // ->with('quarters', $quarters);
 
     }
@@ -45,7 +49,7 @@ class PagesController extends Controller
     {
         $year = $request->year;
         $quarter = $request->quarter;
-        $language = 'english';
+        $language = $request->language;
 
         // dd($request);
 
@@ -55,29 +59,46 @@ class PagesController extends Controller
 
     public function SelectedMap($year, $quarter, $language)
     {
-        $datas = English::where([
-            ['quarter', "=", $quarter],
-            ['year', "=", $year],
-        ])->get();
+        // $datas = English::where([
+        //     ['quarter', "=", $quarter],
+        //     ['year', "=", $year],
+        // ])->get();
 
-        if ($year == "2022") {
-            $old_data = DB::select("select value from english WHERE year = 2021");
+        // if ($year == "2022") {
+        //     $old_data = DB::select("select value from english WHERE year = 2021");
 
-            for($i=0; $i<count($old_data); $i++) {
-                $values[$i] = $old_data[$i]->value;
-            }
+        //     dd($old_data);
 
-            return view('map')
-                ->with('datas', $datas)
-                ->with('quarter', $quarter)
-                ->with('year', $year)
-                ->with('values', $values);
-        } else {
-            return view('map')
-                ->with('datas', $datas)
-                ->with('quarter', $quarter)
-                ->with('year', $year);
-        }
+        //     return view('map')
+        //         ->with('datas', $datas)
+        //         ->with('quarter', $quarter)
+        //         ->with('year', $year)
+        //         ->with('values', $values);
+        // } else {
+        //     return view('map')
+        //         ->with('datas', $datas)
+        //         ->with('quarter', $quarter)
+        //         ->with('year', $year);
+        // }
+
+        $values = DB::select("select * from $language WHERE year = 2021 ORDER BY id ASC");
+
+        $datas = DB::select("select * from $language WHERE year = $year ORDER BY id ASC");
+
+
+
+
+
+        return view('map')
+        ->with('datas', $datas)
+        ->with('quarter', $quarter)
+        ->with('year', $year)
+        ->with('values', $values)
+        ->with('language', $language);
+
+
+
+
     }
 
 
