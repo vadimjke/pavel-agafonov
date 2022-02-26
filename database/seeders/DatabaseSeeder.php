@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             EnglishSeeder::class,
             SpanishSeeder::class,
             ChineseSeeder::class,
+            ArabicSeeder::class,
             UserSeeder::class,
         ]);
     }
