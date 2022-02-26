@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             EnglishSeeder::class,
             SpanishSeeder::class,
+            ChineseSeeder::class,
             UserSeeder::class,
         ]);
     }

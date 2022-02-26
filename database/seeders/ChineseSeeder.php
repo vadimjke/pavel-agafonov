@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
-class SpanishSeeder extends Seeder
+class ChineseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
