@@ -61,13 +61,12 @@
             <select class="form-select" name="language">
                 <option {{ ($language == 'english') ? 'selected' : '' }} value="english">Английский</option>
                 <option {{ ($language == 'spanish') ? 'selected' : '' }} value="spanish">Испанский</option>
-                <!-- <option value="arabic">Арабский</option>
-                <option value="chinese">Китайский</option> -->
+                <option {{ ($language == 'arabic') ? 'selected' : '' }} value="arabic">Арабский</option>
+                <option {{ ($language == 'chinese') ? 'selected' : '' }} value="chinese">Китайский</option>
             </select>
             <button type="submit" class="btn btn-secondary">Показать</button>
       </form>
 
-      {{$language}}
       </div>
       @else
       <div style="width: 600px;">&nbsp;</div>

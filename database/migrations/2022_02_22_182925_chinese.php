@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('china', function (Blueprint $table) {
+        Schema::create('chinese', function (Blueprint $table) {
             $table->id();
             $table->integer('year');
             $table->integer('quarter');
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('china');
+        Schema::dropIfExists('chinese');
     }
 };
