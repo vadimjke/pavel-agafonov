@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('population');
             $table->bigInteger('mentions');
             $table->float('pentil', 4, 1);
-            $table->float('value', 4, 1);
+            $table->float('value', 8, 4);
             $table->float('diff', 4, 1)->nullable();
         });
     }
