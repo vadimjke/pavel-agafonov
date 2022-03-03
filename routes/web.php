@@ -24,7 +24,20 @@ Route::get('/map', [PagesController::class, 'map']);
 Route::post('/map', [PagesController::class, 'SelectMap']);
 Route::get('/map/{year}/{quarter}/{language}', [PagesController::class, 'SelectedMap'])->name('SelectedMap'); 
 
-Route::get('dashboard', [PagesController::class, 'dashboard']); 
+Route::get('dashboard', [PagesController::class, 'dashboard'])->name('dashboard'); 
+Route::get('/dashboard/{year}/{quarter}/{language}', [PagesController::class, 'EditData']); 
+Route::post('/dashboard/update', [PagesController::class, 'UpdateData']); 
+Route::get('/dashboard/update', function () {
+    return view('dashboard');
+});
+
+Route::post('/dashboard/add', [PagesController::class, 'AddData']);
+Route::get('/dashboard/add', function () {
+    return view('dashboard');
+});
+
+Route::get('/test', [PagesController::class, 'Test']);
+
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
 
