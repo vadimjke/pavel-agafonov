@@ -28,6 +28,18 @@
         <input type="hidden" name="year" value="{{$year}}">
 
         <input type="submit" value="Создать" class="btn btn-lg btn-success insert-button">
+        <a class="btn btn-lg btn-warning insert-demo" href=# onclick="insertDemo()">Внести демо-данные</a>
+
+        <script>
+            function insertDemo() {
+
+            var rarr = [ 0.2, 0.4, 0.6, 0.8, 1 ];
+            var random = rarr[Math.floor(Math.random() * rarr.length)];
+            $(".col-3").each(function(){
+                $(this).find('input').val(random);
+      })
+    }
+            </script>
 
         <div class="edit-block">
 

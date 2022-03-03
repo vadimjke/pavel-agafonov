@@ -114,6 +114,11 @@ font-size: 26px;
     top: 50%;
     right: 20%;
 }
+.insert-demo {
+    position: fixed;
+    top: 60%;
+    right: 20%;
+}
 
 #map-tooltip {
     position: fixed;
