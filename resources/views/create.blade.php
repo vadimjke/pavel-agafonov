@@ -65,8 +65,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>США</p>
@@ -102,8 +102,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Индия</p>
@@ -139,8 +139,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Япония</p>
@@ -176,8 +176,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Германия</p>
@@ -213,8 +213,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Россия</p>
@@ -250,8 +250,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Индонезия</p>
@@ -287,8 +287,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бразилия</p>
@@ -324,8 +324,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Франция</p>
@@ -361,8 +361,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Великобритания</p>
@@ -398,8 +398,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Турция</p>
@@ -435,8 +435,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Италия</p>
@@ -472,8 +472,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мексика</p>
@@ -509,8 +509,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Южная Корея</p>
@@ -546,8 +546,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Канада</p>
@@ -583,8 +583,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Испания</p>
@@ -620,8 +620,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Саудовская Аравия</p>
@@ -657,8 +657,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Австралия</p>
@@ -694,8 +694,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Тайвань</p>
@@ -731,8 +731,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Польша</p>
@@ -768,8 +768,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Египет</p>
@@ -805,8 +805,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Таиланд</p>
@@ -842,8 +842,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Иран</p>
@@ -879,8 +879,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Пакистан</p>
@@ -916,8 +916,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Нигерия</p>
@@ -953,8 +953,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Вьетнам</p>
@@ -990,8 +990,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Нидерланды</p>
@@ -1027,8 +1027,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Аргентина</p>
@@ -1064,8 +1064,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Филиппины</p>
@@ -1101,8 +1101,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Малайзия</p>
@@ -1138,8 +1138,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бангладеш</p>
@@ -1175,8 +1175,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Южная Африка</p>
@@ -1212,8 +1212,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Колумбия</p>
@@ -1249,8 +1249,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>ОАЭ</p>
@@ -1286,8 +1286,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Швейцария</p>
@@ -1323,8 +1323,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Румыния</p>
@@ -1360,8 +1360,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бельгия</p>
@@ -1397,8 +1397,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Швеция</p>
@@ -1434,8 +1434,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сингапур</p>
@@ -1471,8 +1471,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Украина</p>
@@ -1508,8 +1508,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Казахстан</p>
@@ -1545,8 +1545,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Алжир</p>
@@ -1582,8 +1582,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Австрия</p>
@@ -1619,8 +1619,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ирландия</p>
@@ -1656,8 +1656,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Чили</p>
@@ -1693,8 +1693,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гонконг</p>
@@ -1730,8 +1730,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Чехия</p>
@@ -1767,8 +1767,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ирак</p>
@@ -1804,8 +1804,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Перу</p>
@@ -1841,8 +1841,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Израиль</p>
@@ -1878,8 +1878,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Норвегия</p>
@@ -1915,8 +1915,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Норвегия</p>
@@ -1952,8 +1952,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Португалия</p>
@@ -1989,8 +1989,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Дания</p>
@@ -2026,8 +2026,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Дания</p>
@@ -2063,8 +2063,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Венгрия</p>
@@ -2100,8 +2100,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Греция</p>
@@ -2137,8 +2137,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Шри-Ланка</p>
@@ -2174,8 +2174,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Эфиопия</p>
@@ -2211,8 +2211,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мьянма</p>
@@ -2248,8 +2248,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Марокко</p>
@@ -2285,8 +2285,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Финляндия</p>
@@ -2322,8 +2322,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Узбекистан</p>
@@ -2359,8 +2359,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Катар</p>
@@ -2396,8 +2396,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кения</p>
@@ -2433,8 +2433,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Новая Зеландия</p>
@@ -2470,8 +2470,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ангола</p>
@@ -2507,8 +2507,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кувейт</p>
@@ -2544,8 +2544,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Доминиканская Республика</p>
@@ -2581,8 +2581,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Эквадор</p>
@@ -2618,8 +2618,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Беларусь</p>
@@ -2655,8 +2655,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Судан</p>
@@ -2692,8 +2692,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Словакия</p>
@@ -2729,8 +2729,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гана</p>
@@ -2766,8 +2766,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Танзания</p>
@@ -2803,8 +2803,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Болгария</p>
@@ -2840,8 +2840,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гватемала</p>
@@ -2877,8 +2877,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Азербайджан</p>
@@ -2914,8 +2914,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Венесуэла</p>
@@ -2951,8 +2951,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кот-д&#039;Ивуар</p>
@@ -2988,8 +2988,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Оман</p>
@@ -3025,8 +3025,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сербия</p>
@@ -3062,8 +3062,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Тунис</p>
@@ -3099,8 +3099,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Непал</p>
@@ -3136,8 +3136,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Панама</p>
@@ -3173,8 +3173,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Хорватия</p>
@@ -3210,8 +3210,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Пуэрто-Рико</p>
@@ -3247,8 +3247,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Литва</p>
@@ -3284,8 +3284,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Уганда</p>
@@ -3321,8 +3321,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Иордания</p>
@@ -3358,8 +3358,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Коста-Рика</p>
@@ -3395,8 +3395,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Демократическая Республика Конго</p>
@@ -3432,8 +3432,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Камерун</p>
@@ -3469,8 +3469,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Боливия</p>
@@ -3506,8 +3506,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Парагвай</p>
@@ -3543,8 +3543,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Туркменистан</p>
@@ -3580,8 +3580,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Словения</p>
@@ -3617,8 +3617,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Афганистан</p>
@@ -3654,8 +3654,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Уругвай</p>
@@ -3691,8 +3691,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ливан</p>
@@ -3728,8 +3728,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бахрейн</p>
@@ -3765,8 +3765,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Камбоджа</p>
@@ -3802,8 +3802,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Люксембург</p>
@@ -3839,8 +3839,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Замбия</p>
@@ -3876,8 +3876,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Латвия</p>
@@ -3913,8 +3913,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Йемен</p>
@@ -3950,8 +3950,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Лаос</p>
@@ -3987,8 +3987,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сенегал</p>
@@ -4024,8 +4024,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Грузия</p>
@@ -4061,8 +4061,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сальвадор</p>
@@ -4098,8 +4098,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гондурас</p>
@@ -4135,8 +4135,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Босния и Герцеговина</p>
@@ -4172,8 +4172,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Эстония</p>
@@ -4209,8 +4209,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Буркина-Фасо</p>
@@ -4246,8 +4246,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мали</p>
@@ -4283,8 +4283,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мадагаскар</p>
@@ -4320,8 +4320,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бенин</p>
@@ -4357,8 +4357,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Албания</p>
@@ -4394,8 +4394,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мозамбик</p>
@@ -4431,8 +4431,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Монголия</p>
@@ -4468,8 +4468,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Армения</p>
@@ -4505,8 +4505,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ливия</p>
@@ -4542,8 +4542,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Макао</p>
@@ -4579,8 +4579,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гвинея</p>
@@ -4616,8 +4616,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Никарагуа</p>
@@ -4653,8 +4653,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ботсвана</p>
@@ -4690,8 +4690,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кипр</p>
@@ -4727,8 +4727,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гаити</p>
@@ -4764,8 +4764,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Тринидад и Тобаго</p>
@@ -4801,8 +4801,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Таджикистан</p>
@@ -4838,8 +4838,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Северная Македония</p>
@@ -4875,8 +4875,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Зимбабве</p>
@@ -4912,8 +4912,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Молдавия</p>
@@ -4949,8 +4949,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Папуа - Новая Гвинея</p>
@@ -4986,8 +4986,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Габон</p>
@@ -5023,8 +5023,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кыргызстан</p>
@@ -5060,8 +5060,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Нигер</p>
@@ -5097,8 +5097,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Малави</p>
@@ -5134,8 +5134,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бруней</p>
@@ -5171,8 +5171,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Руанда</p>
@@ -5208,8 +5208,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Ямайка</p>
@@ -5245,8 +5245,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Палестина</p>
@@ -5282,8 +5282,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Чад</p>
@@ -5319,8 +5319,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Маврикий</p>
@@ -5356,8 +5356,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Экваториальная Гвинея</p>
@@ -5393,8 +5393,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мавритания</p>
@@ -5430,8 +5430,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Намибия</p>
@@ -5467,8 +5467,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мальта</p>
@@ -5504,8 +5504,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Республика Косово</p>
@@ -5541,8 +5541,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Исландия</p>
@@ -5578,8 +5578,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Республика Конго</p>
@@ -5615,8 +5615,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Идти</p>
@@ -5652,8 +5652,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гайана</p>
@@ -5689,8 +5689,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сомали</p>
@@ -5726,8 +5726,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сьерра-Леоне</p>
@@ -5763,8 +5763,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Багамы</p>
@@ -5800,8 +5800,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Черногория</p>
@@ -5837,8 +5837,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Южный Судан</p>
@@ -5874,8 +5874,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Фиджи</p>
@@ -5911,8 +5911,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Эсватини</p>
@@ -5948,8 +5948,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Суринам</p>
@@ -5985,8 +5985,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бурунди</p>
@@ -6022,8 +6022,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бутан</p>
@@ -6059,8 +6059,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Мальдивы</p>
@@ -6096,8 +6096,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Либерия</p>
@@ -6133,8 +6133,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Эритрея</p>
@@ -6170,8 +6170,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Джибути</p>
@@ -6207,8 +6207,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гамбия</p>
@@ -6244,8 +6244,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Лесото</p>
@@ -6281,8 +6281,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Центрально-Африканская Республика</p>
@@ -6318,8 +6318,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Восточный Тимор</p>
@@ -6355,8 +6355,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гвинея-Бисау</p>
@@ -6392,8 +6392,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Андорра</p>
@@ -6429,8 +6429,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Барбадос</p>
@@ -6466,8 +6466,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кабо-Верде</p>
@@ -6503,8 +6503,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Коморские острова</p>
@@ -6540,8 +6540,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Белиз</p>
@@ -6577,8 +6577,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сейшельские острова</p>
@@ -6614,8 +6614,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Санкт-Люсия</p>
@@ -6651,8 +6651,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сан-Марино</p>
@@ -6688,8 +6688,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Антигуа и Барбуда</p>
@@ -6725,8 +6725,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Гренада</p>
@@ -6762,8 +6762,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Соломоновы острова</p>
@@ -6799,8 +6799,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Святой Винсент и Гренадины</p>
@@ -6836,8 +6836,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сент-Китс и Невис</p>
@@ -6873,8 +6873,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Самоа</p>
@@ -6910,8 +6910,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сан-Томе и Принсипи</p>
@@ -6947,8 +6947,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Доминика</p>
@@ -6984,8 +6984,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Вануату</p>
@@ -7021,8 +7021,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Тонга</p>
@@ -7058,8 +7058,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Микронезия</p>
@@ -7095,8 +7095,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Кирибати</p>
@@ -7132,8 +7132,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Палау</p>
@@ -7169,8 +7169,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Маршалловы острова</p>
@@ -7206,8 +7206,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Науру</p>
@@ -7243,8 +7243,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Тувалу</p>
@@ -7280,8 +7280,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Куба</p>
@@ -7317,8 +7317,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Сирия</p>
@@ -7354,8 +7354,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Западная Сахара</p>
@@ -7391,8 +7391,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Французская Гвиана</p>
@@ -7428,8 +7428,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Того</p>
@@ -7465,8 +7465,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Северная Корея</p>
@@ -7502,8 +7502,8 @@
 
             </div>
 
-            </form>
-                        <input type="hidden" name="_token" value="y8k0GNO6sgpO02MgL3b6iMbQzbxGeEi8xOiWwCLY">            
+            
+                        
 
             <div class="edit-block-item">
                 <p>Бутан</p>
@@ -7542,7 +7542,7 @@
 
 
 
-
+</form>
 
 
 
@@ -7552,7 +7552,7 @@
 
         </div>
 
-    </form>
+    
 
 
 
