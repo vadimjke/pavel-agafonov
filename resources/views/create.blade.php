@@ -10,7 +10,7 @@
 
     <div class="row mb-50">
         <div class="col-6">
-            <h3>Создание записи: <br>{{$year}} год, {{$quarter}} квартал, {{$language}} язык</h3>
+            <h3>Создание записи: <br>{{$year}} год, {{$quarter}} квартал, {{$display_language}} язык</h3>
         </div>
     </div>
 

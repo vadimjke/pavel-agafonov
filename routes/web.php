@@ -33,10 +33,13 @@ Route::get('/dashboard/update', function () {
 
 Route::post('/dashboard/add', [PagesController::class, 'AddData']);
 Route::get('/dashboard/add', function () {
-    return view('dashboard');
+    return redirect('/dashboard');
 });
 
 Route::get('/test', [PagesController::class, 'Test']);
+Route::post('/dashboard/insert', [PagesController::class, 'InsertData']);
+
+Route::post('/dashboard/{year}/{quarter}/{language}/delete', [PagesController::class, 'DeleteData']);
 
 Route::get('login', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 

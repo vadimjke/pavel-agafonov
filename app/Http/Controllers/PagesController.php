@@ -97,6 +97,114 @@ class PagesController extends Controller
     }
 
 
+    public function InsertData(request $request) 
+    {
+        $data = $request->request;
+
+        $temp_array = (array) $data;
+
+        $array = $temp_array["\x00*\x00parameters"];
+
+        $language = $array['language'];
+        $quarter = $array['quarter'];
+        $year = $array['year'];
+
+        $array = array_slice($array, 4);
+
+        function slicer($arr) {
+            $arr = array_slice($arr, 0, 4);
+            return $arr;
+        }
+
+        // $array = slicer($array);
+
+        $keys = array_keys($array);
+        $arraySize = count($array);
+
+        $rows = $arraySize/4 + 1;
+
+        // print_r($array);
+
+        // echo "<b>arr size:".$arraySize." </b><br>";
+        // echo "<b>rows size:".$rows." </b><br><BR>";
+
+        for($i=0; $i < $arraySize; $i = $i+4) {
+            // echo $i;
+            $start = $i;
+            $end = $i+4;
+
+            $temp = array_slice($array, $start, $end);
+
+            $counter = 0;
+
+            foreach($temp as $key=>$value) {
+                $country = explode("-", $key)[0];
+                $row_name = explode("-", $key)[1];
+                    switch($row_name) {
+                        case 'population':
+                            $item_population = $value;
+                            break;
+                        case 'mentions':
+                            $item_mentions = $value;
+                            break;
+                        case 'pentil':
+                            $item_pentil = $value;
+                            break;
+                        case 'value':
+                            $item_value = $value;
+                            break;                        
+                    }
+                    // echo $key.": ".$value."<br>";
+                    $counter++;
+                    if ($counter == 4) {
+
+
+                      DB::table($language)->insert([
+                            'year' => $year,
+                            'quarter' => $quarter,
+                            'display_name' => $country,
+                            'name' => $country,
+                            'population' => $item_population,
+                            'mentions' => $item_mentions,
+                            'pentil' => $item_pentil,
+                            'value' => $item_value
+                      ]);
+ 
+                
+
+                        // echo "Страна: :".$country."<br>";
+                        // echo "Население: :".$item_population."<br>";
+                        // echo "Упоминания: :".$item_mentions."<br>";
+                        // echo "Пентиль: :".$item_pentil."<br>";
+                        // echo "Значение: :".$item_value."<br>";
+                        // echo "<hr>";
+                }
+            }
+
+
+            // print_r($temp);
+
+            // echo $keys[$i] . ': ' . $array[$keys[$i]] . '<br>';
+        }
+
+        DB::table('data_tables')->insert([
+            'year' => $year,
+            'quarter' => $quarter,
+            'language' => $language, 
+            'exists' => 1
+        ]);
+
+        $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 ORDER BY id ASC");
+        $q2022_2_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 2 ORDER BY id ASC");
+        $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
+        $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
+
+        return redirect('/dashboard')->with('message', 'Запись успешно создана');
+
+        // dd($array);
+    }
+
+
     public function UpdateData(Request $request)
     {
 
@@ -229,17 +337,61 @@ class PagesController extends Controller
         $data = DB::select("select * from $language WHERE year = $year AND quarter = $quarter ORDER BY id ASC");
 
         if (count($data) > 0) {
-            return view('dashboard')->with('ErrorMsg', 'Данная запись уже существует');
+            $q2022 = DB::table('data_tables')
+            ->select('*', DB::raw('count(*) as total'))
+            ->where("year", '2022')
+            ->groupBy('year')
+            ->get();
+
+       $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 ORDER BY id ASC");
+       $q2022_2_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 2 ORDER BY id ASC");
+       $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
+       $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
+
+
+            return view('dashboard')->with('ErrorMsg', 'Данная запись уже существует')
+            ->with('q2022_1_l', $q2022_1_l)
+            ->with('q2022_2_l', $q2022_2_l)
+            ->with('q2022_3_l', $q2022_3_l)
+            ->with('q2022_4_l', $q2022_4_l)
+            ->with('q2022', $q2022);
         }
 
         else {
             return view('create')
-                ->with('language', $display_language)
+                ->with('display_language', $display_language)
                 ->with('year', $year)
-                ->with('quarter', $quarter);
+                ->with('quarter', $quarter)
+                ->with('language', $language);
         }
     }
 
+
+
+
+    public function DeleteData(request $request)
+    {
+
+        $year = $request->input('year');
+        $quarter = $request->input('quarter');
+        $language = $request->input('language');
+        
+        $deleted = DB::table($language)
+        ->where('year', '=', $year)
+        ->where('quarter', $quarter)
+        ->delete();
+
+        $deleted_2 = DB::table('data_tables')
+        ->where('year', '=', $year)
+        ->where('quarter', $quarter)
+        ->where('language', $language)
+        ->delete();
+
+        return redirect('/dashboard');
+        
+        // $blog = DB::table('blog')->where('id',$id)->delete();
+
+    }
 
 
 
@@ -314,6 +466,51 @@ class PagesController extends Controller
             }
 
 
+            // dd($admindata);
+
+
+            $y2021 = DB::select("select * from data_tables WHERE year = 2021 ORDER BY id ASC");
+            $y2022 = DB::select("select * from data_tables WHERE year = 2022 ORDER BY id ASC");
+            $y2022_1 = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 1 ORDER BY id ASC");
+            $y2022_2 = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 2 ORDER BY id ASC");
+            $y2022_3 = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
+            $y2022_4 = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
+
+
+
+            $extra_data = DB::select("select * from data_tables");
+
+            // dd($extra_data);
+
+            $q2021 = DB::table('data_tables')
+                 ->select('*', DB::raw('count(*) as total'))
+                 ->where("year", '2021')
+                 ->groupBy('year')
+                 ->get();
+            // dd($extra_data);
+
+            $q2022 = DB::table('data_tables')
+                 ->select('*', DB::raw('count(*) as total'))
+                 ->where("year", '2022')
+                 ->groupBy('year')
+                 ->get();
+
+            $q2022_1_l = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 1 ORDER BY id ASC");
+            $q2022_2_l = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 2 ORDER BY id ASC");
+            $q2022_3_l = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
+            $q2022_4_l = DB::select("select * from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
+
+
+            // dd($q2022_1_l);
+
+
+            // dd(count($y2022_4));
+
+            // 2022 q1 english
+
+            
+
+
             // function create_admin_data($)
 
             // $admindata = array (
@@ -343,7 +540,13 @@ class PagesController extends Controller
 
             // dd($admindata);
 
-            return view('dashboard')->with('data', $admindata);
+
+            return view('dashboard')->with('data', $admindata)
+            ->with('q2022', $q2022)
+            ->with('q2022_1_l', $q2022_1_l)
+            ->with('q2022_2_l', $q2022_2_l)
+            ->with('q2022_3_l', $q2022_3_l)
+            ->with('q2022_4_l', $q2022_4_l);
         }
 
         return redirect("login")->withSuccess('Вам необходимо сперва залогиниться');

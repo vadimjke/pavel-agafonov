@@ -109,6 +109,7 @@
                     </tr>
                 </tbody>
             </table>
+
             <table class="table">
                 <thead>
                     <tr>
@@ -116,6 +117,8 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @isset($q2022_1_l)
+                    @if(count($q2022_1_l) > 0)
                     <tr>
                         <td>1 квартал</td>
                         <td>
@@ -127,16 +130,93 @@
                                 </a>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/dashboard/2022/1/english">Английский</a></li>
-                                    <li><a class="dropdown-item" href="/dashboard/2022/1/spanish">Испанский</a></li>
-                                    <li><a class="dropdown-item" href="/dashboard/2022/1/arabic">Арабский</a></li>
-                                    <li><a class="dropdown-item" href="/dashboard/2022/1/chinese">Китайский</a></li>
+                                    @foreach($q2022_1_l as $item)
+                                        <li><a class="dropdown-item" href="/dashboard/2022/{{$item->quarter}}/{{$item->language}}">{{$item->language}}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
 
 
                         </td>
                     </tr>
+                    @endif
+                    @endisset
+
+                    @isset($q2022_2_l)
+                    @if(count($q2022_2_l) > 0)
+                    <tr>
+                        <td>2 квартал</td>
+                        <td>
+
+
+                            <div class="dropdown">
+                                <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Редактировать
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach($q2022_2_l as $item)
+                                        <li><a class="dropdown-item" href="/dashboard/2022/{{$item->quarter}}/{{$item->language}}">{{$item->language}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+
+                        </td>
+                    </tr>
+                    @endif
+                    @endisset
+                    
+                    
+                    @isset($q2022_3_l)
+                    @if(count($q2022_3_l) > 0)
+                    <tr>
+                        <td>3 квартал</td>
+                        <td>
+
+
+                            <div class="dropdown">
+                                <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Редактировать
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach($q2022_3_l as $item)
+                                        <li><a class="dropdown-item" href="/dashboard/2022/{{$item->quarter}}/{{$item->language}}">{{$item->language}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+
+                        </td>
+                    </tr>
+                    @endif
+                    @endisset
+
+                    @isset($q2022_4_l)
+                    @if(count($q2022_4_l) > 0)
+                    <tr>
+                        <td>4 квартал</td>
+                        <td>
+
+
+                            <div class="dropdown">
+                                <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Редактировать
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    @foreach($q2022_4_l as $item)
+                                        <li><a class="dropdown-item" href="/dashboard/2022/{{$item->quarter}}/{{$item->language}}">{{$item->language}}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+
+                        </td>
+                    </tr>
+                    @endif
+                    @endisset
                 </tbody>
             </table>
         </div>

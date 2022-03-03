@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             ChineseSeeder::class,
             ArabicSeeder::class,
             UserSeeder::class,
+            DataTablesSeeder::class,
         ]);
     }
 }
