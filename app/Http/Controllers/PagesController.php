@@ -12,20 +12,67 @@ class PagesController extends Controller
     public function map()
     {
 
-        $datas = English::orderBy('id', 'ASC')->get();
+        $datas = English::orderBy('id', 'ASC')
+        ->where('year', '2021')
+        ->where('quarter', '4')
+        ->get();
 
         // $quarters = DB::table('english')
         // ->select('quarter', DB::raw('count(*) as total'))
         // ->groupBy('quarter')
         // ->get();
 
+                                // langs 2021
+                                $q2021_1_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY language ORDER BY id ASC");
+                                $q2021_2_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY language ORDER BY id ASC");
+                                $q2021_3_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY language ORDER BY id ASC");
+                                $q2021_4_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY language ORDER BY id ASC");
+
+        // langs 2022
+        $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 GROUP BY language ORDER BY id ASC");
+        $q2022_2_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 2 GROUP BY language ORDER BY id ASC");
+        $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 GROUP BY language ORDER BY id ASC");
+        $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 GROUP BY language ORDER BY id ASC");
+
+        // quarters 2022
+        $q2022_1_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
+        $q2022_2_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
+        $q2022_3_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
+        $q2022_4_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+
+        // dd($q2022_1_l);
+
+
+                
+                        // quarters 2021
+                        $q2021_1_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
+                        $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
+                        $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
+                        $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+        
+
 
         return view('map')
             ->with('datas', $datas)
             ->with('year', '2021')
             ->with('quarter', '4')
-            ->with('language', 'english');
-        // ->with('quarters', $quarters);
+            ->with('language', 'english')
+            ->with('q2022_1_l', $q2022_1_l)
+            ->with('q2022_2_l', $q2022_2_l)
+            ->with('q2022_3_l', $q2022_3_l)
+            ->with('q2022_4_l', $q2022_4_l)
+            ->with('q2022_1_q', $q2022_1_q)
+            ->with('q2022_2_q', $q2022_2_q)
+            ->with('q2022_3_q', $q2022_3_q)
+            ->with('q2022_4_q', $q2022_4_q)                    
+            ->with('q2021_1_l', $q2021_1_l)
+            ->with('q2021_2_l', $q2021_2_l)
+            ->with('q2021_3_l', $q2021_3_l)
+            ->with('q2021_4_l', $q2021_4_l)
+            ->with('q2021_1_q', $q2021_1_q)
+            ->with('q2021_2_q', $q2021_2_q)
+            ->with('q2021_3_q', $q2021_3_q)
+            ->with('q2021_4_q', $q2021_4_q);
 
     }
 
@@ -288,20 +335,61 @@ class PagesController extends Controller
         //         ->with('year', $year);
         // }
 
-        $values = DB::select("select * from $language WHERE year = 2021 ORDER BY id ASC");
+        $values = DB::select("select * from $language WHERE year = 2021 AND quarter = 4 ORDER BY id ASC");
 
-        $datas = DB::select("select * from $language WHERE year = $year ORDER BY id ASC");
-
-
+        $datas = DB::select("select * from $language WHERE year = $year AND quarter = $quarter ORDER BY id ASC");
 
 
+                // langs 2022
+                $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 GROUP BY language ORDER BY id ASC");
+                $q2022_2_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 2 GROUP BY language ORDER BY id ASC");
+                $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 GROUP BY language ORDER BY id ASC");
+                $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 GROUP BY language ORDER BY id ASC");
+        
+                // quarters 2022
+                $q2022_1_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
+                $q2022_2_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
+                $q2022_3_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
+                $q2022_4_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+
+
+                // langs 2021
+                $q2021_1_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY language ORDER BY id ASC");
+                $q2021_2_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY language ORDER BY id ASC");
+                $q2021_3_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY language ORDER BY id ASC");
+                $q2021_4_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY language ORDER BY id ASC");
+        
+                // quarters 2021
+                $q2021_1_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
+                $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
+                $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
+                $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+
+
+                // dd($q2022_1_q);
 
         return view('map')
             ->with('datas', $datas)
             ->with('quarter', $quarter)
             ->with('year', $year)
             ->with('values', $values)
-            ->with('language', $language);
+            ->with('language', $language)
+            ->with('q2022_1_l', $q2022_1_l)
+            ->with('q2022_2_l', $q2022_2_l)
+            ->with('q2022_3_l', $q2022_3_l)
+            ->with('q2022_4_l', $q2022_4_l)
+            ->with('q2022_1_q', $q2022_1_q)
+            ->with('q2022_2_q', $q2022_2_q)
+            ->with('q2022_3_q', $q2022_3_q)
+            ->with('q2022_4_q', $q2022_4_q)
+            ->with('q2021_1_l', $q2021_1_l)
+            ->with('q2021_2_l', $q2021_2_l)
+            ->with('q2021_3_l', $q2021_3_l)
+            ->with('q2021_4_l', $q2021_4_l)
+            ->with('q2021_1_q', $q2021_1_q)
+            ->with('q2021_2_q', $q2021_2_q)
+            ->with('q2021_3_q', $q2021_3_q)
+            ->with('q2021_4_q', $q2021_4_q);
     }
 
 
