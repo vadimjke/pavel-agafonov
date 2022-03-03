@@ -114,3 +114,44 @@ font-size: 26px;
     top: 50%;
     right: 20%;
 }
+
+#map-tooltip {
+    position: fixed;
+    bottom: 100px;
+    left: -300px;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border: 1px solid black;
+    z-index: 99999999;
+    transition: all 0.5s;
+    padding: 5px;
+}
+
+#map-tooltip h1 {
+    font-size: 18px;
+}
+
+#map-tooltip p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.animate-map-tooltip {
+    left: 15px !important;
+}
+.rmove-map-tooltip {
+    left: -300px !important;
+}
+
+#closeMapButton {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999999999;
+}

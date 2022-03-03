@@ -57,13 +57,6 @@ google.charts.load('current', {
 
 
 
-
-
-
-
-
-
-  
     google.visualization.events.addListener(chart, 'select', function () {
       var selection = chart.getSelection();
       if (selection.length > 0) {
@@ -71,18 +64,12 @@ google.charts.load('current', {
 
         mtooltip.classList.add("animate-map-tooltip");
 
-        
-        let ztData = dataTable.getValue(selection[0].row, 2);
-
-        ztData += "<div id='closeMapButton' onclick='closeMapF()'>✕</div>";
-        mtooltip.innerHTML = ztData;
-
-        
-        console.log(ztData);
+        console.log(dataTable.getValue(selection[0].row, 0));
         //window.open('http://' + data.getValue(selection[0].row, 2), '_blank');
       }
     });
-    
+
+
 
 
 
@@ -100,9 +87,6 @@ google.charts.load('current', {
 
 
 
-  function closeMapF() {
-    document.getElementById('map-tooltip').classList.remove('animate-map-tooltip');
-    }
 
   function createCustomHTMLContent(name, value, median, diff, population, isoCode, mentions) {
     diff = diff-1;
@@ -162,8 +146,24 @@ google.charts.load('current', {
 
 
 <div id="map-tooltip">
-
+    <div id="closeMapButton">
+    ✖
+    </div>
 </div>
+
+
+<script>
+  
+  // close button
+
+  var mapToolTip = document.getElementById("map-tooltip");
+  var closeMap = document.getElementById("closeMapButton");
+  closeMap.addEventListener('click', function() {
+    mapToolTip.classList.remove('animate-map-tooltip')
+  })
+  </script>
+
+
 
 
 
