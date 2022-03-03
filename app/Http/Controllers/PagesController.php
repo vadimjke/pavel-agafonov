@@ -364,6 +364,7 @@ class PagesController extends Controller
                 $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
                 $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
                 $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+                
 
 
                 // dd($q2022_1_q);
