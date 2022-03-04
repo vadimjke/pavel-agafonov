@@ -6,4 +6,4 @@
 - Текущая версия сайта: **1.1.0**
 - Последнее изменение: **04.03.2022**
 
-Журнал изменений - [CHANGELOG.MD](https://github.com/vadimjke/pavel-agafonov/blob/main/CHANGELOG.md)
+Журнал изменений - [CHANGELOG.MD](https://github.com/vadimjke/pavel-agafonov/blob/main/CHANGELOG.MD)
