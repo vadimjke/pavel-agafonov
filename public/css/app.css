@@ -275,7 +275,52 @@ text {
 
 
 
+/* small screen */
+@media screen and (max-width: 1400px) {
+    .scale_numbers {
+        font-size: 14px;
+        top: -82px;
+    }
+    #sn1 {
+        left: 80px;
+    }
+    #sn2 {
+        left: 140px;
+    }
+    #sn3 {
+        left: 200px;
+    }
+    #sn4 {
+        left: 260px;
+    }
+    #sn5 {
+        left: 320px;
+    }
+    #hn1{
+        display: none;;
+    }
+    #hn2{
+        display: none;
+    }
+}
 
 
+/* very small screen */
 
-
+@media screen and (max-width: 1200px) {
+    #map_customized {
+        display: none;
+    }
+    #mapNotation {
+        display: none;
+    }
+    #formFixMobile {
+        display: block !important;
+    }
+    #formWrapperFix {
+        width: 100% !important;
+    }
+    #formWrapperFix select {
+        margin-bottom: 5px;
+    }
+}

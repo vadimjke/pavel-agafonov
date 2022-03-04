@@ -224,8 +224,8 @@ google.charts.load('current', {
 
 
 <!-- menu block start -->
-      <div class="mt-3 w-50">
-      <form action="/map/" method="POST" class="d-flex gap-2">
+      <div class="mt-3 w-50" id="formWrapperFix">
+      <form action="/map/" method="POST" id="formFixMobile" class="d-flex gap-2">
         @csrf
 
         
