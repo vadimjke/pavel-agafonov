@@ -10,3 +10,9 @@ $(window).scroll(function() {
 		$('#mapNotation').removeClass('activate-notation');
 	}
 });
+
+
+
+function dce(y) {
+	$(y).remove();
+}

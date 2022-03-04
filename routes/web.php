@@ -18,7 +18,7 @@ use App\Http\Controllers\CustomAuthController;
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/support', [PagesController::class, 'support']);
 
-Route::get('/map', [PagesController::class, 'map']);
+Route::get('/map', [PagesController::class, 'map'])->name('map');
 Route::post('/map', [PagesController::class, 'SelectMap']);
 Route::get('/map/{year}/{quarter}/{language}', [PagesController::class, 'SelectedMap'])->name('SelectedMap'); 
 

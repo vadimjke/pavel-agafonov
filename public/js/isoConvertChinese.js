@@ -46,7 +46,7 @@ var isoCountries = {
     'CN' : '中國',
     'CX' : 'Christmas Island',
     'CC' : 'Cocos (Keeling) Islands',
-    'CO' : 'Colombia',
+    'CO' : '哥倫比亞',
     'KM' : '科摩羅',
     'CG' : '剛果共和國',
     'CD' : '剛果民主共和國',

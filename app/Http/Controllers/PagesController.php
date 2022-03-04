@@ -22,11 +22,12 @@ class PagesController extends Controller
         // ->groupBy('quarter')
         // ->get();
 
-                                // langs 2021
-                                $q2021_1_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY language ORDER BY id ASC");
-                                $q2021_2_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY language ORDER BY id ASC");
-                                $q2021_3_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY language ORDER BY id ASC");
-                                $q2021_4_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY language ORDER BY id ASC");
+
+        // langs 2021
+        $q2021_1_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY language ORDER BY id ASC");
+        $q2021_2_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY language ORDER BY id ASC");
+        $q2021_3_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY language ORDER BY id ASC");
+        $q2021_4_l = DB::select("select language from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY language ORDER BY id ASC");
 
         // langs 2022
         $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 GROUP BY language ORDER BY id ASC");
@@ -39,17 +40,83 @@ class PagesController extends Controller
         $q2022_2_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
         $q2022_3_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
         $q2022_4_q = DB::select("select quarter from data_tables WHERE year = 2022 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
-
-        // dd($q2022_1_l);
-
-
-                
-                        // quarters 2021
-                        $q2021_1_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
-                        $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
-                        $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
-                        $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
         
+        // quarters 2021
+        $q2021_1_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 1 GROUP BY quarter ORDER BY id ASC");
+        $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
+        $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
+        $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+
+
+        function translate_lang($arr) 
+        {
+            $l_counter = count($arr);
+            for ($i=0;$i<$l_counter;$i++)
+                {
+                    switch($arr[$i]->language)
+                    {
+                        case "english":
+                            $arr[$i]->translated_lang = "Английский";
+                            break;
+                        case "spanish":
+                            $arr[$i]->translated_lang = "Испанский";
+                            break;
+                        case "arabic":
+                            $arr[$i]->translated_lang = "Арабский";
+                            break;
+                        case "chinese":
+                            $arr[$i]->translated_lang = "Китайский";
+                            break;
+                    }
+                }
+        }
+
+        function translate_quarter($arr) 
+        {
+            $q_counter = count($arr);
+            for ($i=0;$i<$q_counter;$i++)
+                {
+                    switch($arr[$i]->quarter)
+                    {
+                        case "1":
+                            $arr[$i]->translated_quarter = "I";
+                            break;
+                        case "2":
+                            $arr[$i]->translated_quarter = "II";
+                            break;
+                        case "3":
+                            $arr[$i]->translated_quarter = "II";
+                            break;
+                        case "4":
+                            $arr[$i]->translated_quarter = "IV";
+                            break;
+                    }
+                }
+        }
+
+
+
+            // translate 2021 lang
+            translate_lang($q2021_1_l);
+            translate_lang($q2021_2_l);
+            translate_lang($q2021_3_l);
+            translate_lang($q2021_4_l);
+            // translate 2022 lang
+            translate_lang($q2022_1_l);
+            translate_lang($q2022_2_l);
+            translate_lang($q2022_3_l);
+            translate_lang($q2022_4_l);
+            // translate 2021 quarter
+            translate_quarter($q2021_1_q);
+            translate_quarter($q2021_2_q);
+            translate_quarter($q2021_3_q);
+            translate_quarter($q2021_4_q);
+            // translate 2022 quarter
+            translate_quarter($q2022_1_q);
+            translate_quarter($q2022_2_q);
+            translate_quarter($q2022_3_q);
+            translate_quarter($q2022_4_q);
+
 
 
         return view('map')
@@ -364,10 +431,80 @@ class PagesController extends Controller
                 $q2021_2_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 2 GROUP BY quarter ORDER BY id ASC");
                 $q2021_3_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 3 GROUP BY quarter ORDER BY id ASC");
                 $q2021_4_q = DB::select("select quarter from data_tables WHERE year = 2021 AND quarter = 4 GROUP BY quarter ORDER BY id ASC");
+
+
                 
+        function translate_lang($arr) 
+        {
+            $l_counter = count($arr);
+            for ($i=0;$i<$l_counter;$i++)
+                {
+                    switch($arr[$i]->language)
+                    {
+                        case "english":
+                            $arr[$i]->translated_lang = "Английский";
+                            break;
+                        case "spanish":
+                            $arr[$i]->translated_lang = "Испанский";
+                            break;
+                        case "arabic":
+                            $arr[$i]->translated_lang = "Арабский";
+                            break;
+                        case "chinese":
+                            $arr[$i]->translated_lang = "Китайский";
+                            break;
+                    }
+                }
+        }
+
+        function translate_quarter($arr) 
+        {
+            $q_counter = count($arr);
+            for ($i=0;$i<$q_counter;$i++)
+                {
+                    switch($arr[$i]->quarter)
+                    {
+                        case "1":
+                            $arr[$i]->translated_quarter = "I";
+                            break;
+                        case "2":
+                            $arr[$i]->translated_quarter = "II";
+                            break;
+                        case "3":
+                            $arr[$i]->translated_quarter = "III";
+                            break;
+                        case "4":
+                            $arr[$i]->translated_quarter = "IV";
+                            break;
+                    }
+                }
+        }
 
 
-                // dd($q2022_1_q);
+
+            // translate 2021 lang
+            translate_lang($q2021_1_l);
+            translate_lang($q2021_2_l);
+            translate_lang($q2021_3_l);
+            translate_lang($q2021_4_l);
+            // translate 2022 lang
+            translate_lang($q2022_1_l);
+            translate_lang($q2022_2_l);
+            translate_lang($q2022_3_l);
+            translate_lang($q2022_4_l);
+            // translate 2021 quarter
+            translate_quarter($q2021_1_q);
+            translate_quarter($q2021_2_q);
+            translate_quarter($q2021_3_q);
+            translate_quarter($q2021_4_q);
+            // translate 2022 quarter
+            translate_quarter($q2022_1_q);
+            translate_quarter($q2022_2_q);
+            translate_quarter($q2022_3_q);
+            translate_quarter($q2022_4_q);
+
+
+                
 
         return view('map')
             ->with('datas', $datas)

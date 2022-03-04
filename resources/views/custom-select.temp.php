@@ -7,6 +7,7 @@
 
 var oldValue = [];
 @if($year == "2022")
+
     @foreach($values as $value)
       oldValue.push('{{$value->value}}');
     @endforeach
@@ -231,138 +232,231 @@ google.charts.load('current', {
 
 <!-- menu block start -->
 @if (isset($datas))
-      <div class="mt-3 w-50">
+      <div class="mt-3 d-flex">
       <form action="/map/" method="POST" class="d-flex gap-2">
         @csrf
-
-        
-            <select class="form-select" onclick="dce('#defaultYear')" id="mapYear" name="year">
+        <div class="custom-select" style="width: 200px;">
+            <select  id="mapYear" name="year">
             @if(Route::currentRouteName() == 'map')
             <option selected id="defaultYear" value="2021">Год</option>
-            <option value="2021">2021 год</option>
-            <option value="2022">2022 год</option>
+            @endif
+                @if(isset($year))
+                <option value="2021">2021 год</option>
+                <option value="2022">2022 год</option>
+                <!-- <option {{ ($year == '2021') ? 'selected' : '' }} value="2021">2021 год</option>
+                <option {{ ($year == '2022') ? 'selected' : '' }} value="2022">2022 год</option> -->
                 @else
-                <option {{ $year == "2021" ? "selected" : "" }} value="2021">2021 год</option>
-                <option {{ $year == "2022" ? "selected" : "" }} value="2022">2022 год</option>
+                <option selected value="2021">2021 год</option>
+                <option value="2022">2022 год</option>
                 @endif
             </select>
+</div>
 
 
-            <select onclick="dce('#defaultKvartal')" class="form-select" id="mapKvartal" name="quarter">
+            <div class="custom-select" style="width:200px; display:inline-block">
+            <select id="mapKvartal" name="quarter">
             @if(Route::currentRouteName() == 'map')
             <option selected id="defaultKvartal" value="4">Квартал</option>
             @endif
                     @isset($q2021_1_q)
                     @if(count($q2021_1_q) > 0)
                       @foreach ($q2021_1_q as $item)
-                        <option 
-                        @isset($values)
-                        {{ $quarter === "1" ? "selected" : "" }}
-                        @endisset
-                        value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
+                        <option value="{{$item->quarter}}">
+                          @switch($item->quarter)
+                            @case(1)
+                              I
+                              @break
+                            @case(2)
+                              II
+                            @break
+                            @case(3)
+                              III
+                            @break
+                            @case(4)
+                              IV
+                            @break
+                          @endswitch
+                          квартал
+                        </option>
                       @endforeach
                     @endif
                     @endisset
                     @isset($q2021_2_q)
                     @if(count($q2021_2_q) > 0)
                       @foreach ($q2021_2_q as $item)
-                      <option 
-                      @isset($values)
-                        {{ $quarter === "2" ? "selected" : "" }}
-                      @endisset
-                      value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
+                      <option value="{{$item->quarter}}">
+                          @switch($item->quarter)
+                            @case(1)
+                              I
+                              @break
+                            @case(2)
+                              II
+                            @break
+                            @case(3)
+                              III
+                            @break
+                            @case(4)
+                              IV
+                            @break
+                          @endswitch
+                          квартал
+                        </option>
                       @endforeach
                     @endif
                     @endisset
                     @isset($q2021_3_q)
                     @if(count($q2021_3_q) > 0)
                       @foreach ($q2021_3_q as $item)
-                      <option 
-                      @isset($values)
-                        {{ $quarter === "3" ? "selected" : "" }}
-                      @endisset
-                      value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
+                      <option value="{{$item->quarter}}">
+                          @switch($item->quarter)
+                            @case(1)
+                              I
+                              @break
+                            @case(2)
+                              II
+                            @break
+                            @case(3)
+                              III
+                            @break
+                            @case(4)
+                              IV
+                            @break
+                          @endswitch
+                          квартал
+                        </option>
                       @endforeach
                     @endif
                     @endisset
                     @isset($q2021_4_q)
                     @if(count($q2021_4_q) > 0)
                       @foreach ($q2021_4_q as $item)
-                        <option 
-                        @isset($values)
-                        {{ $quarter === "4" ? "selected" : "" }}
-                        @endisset
-                        value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
+                        <option value="{{$item->quarter}}">
+                          @switch($item->quarter)
+                            @case(1)
+                              I
+                              @break
+                            @case(2)
+                              II
+                            @break
+                            @case(3)
+                              III
+                            @break
+                            @case(4)
+                              IV
+                            @break
+                          @endswitch
+                          квартал
+                        </option>
                       @endforeach
                     @endif
                     @endisset
 
              
             </select>
-            <select onclick="dce('#defaultLanguage')" class="form-select" id="mapLang" name="language">
+</div>
+
+
+
+
+
+            <div class="custom-select" style="width:200px; display:inline-block">
+            <select id="mapLang" name="language">
             @if(Route::currentRouteName() == 'map')
             <option selected id="defaultLanguage" value="english">Язык</option>
             @endif
 
                     @isset($q2021_1_l)
-                      @if($year == "2021" && $quarter == "1")
-                        @foreach ($q2021_1_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
+                    @if(count($q2021_1_l) > 0)
+                      @foreach ($q2021_1_l as $item)
+                        <option value="{{$item->language}}">
+                        @switch($item->language)
+                            @case('english')
+                              Английский
+                              @break
+                            @case('arabic')
+                              Арабский
+                            @break
+                            @case('chinese')
+                              Китайский
+                            @break
+                            @case('spanish')
+                              Испанский
+                            @break
+                          @endswitch
+                        </option>
+                      @endforeach
+                    @endif
                     @endisset
                     @isset($q2021_2_l)
-                      @if($year == "2021" && $quarter == "2")
-                        @foreach ($q2021_2_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
+                    @if(count($q2021_2_l) > 0)
+                      @foreach ($q2021_2_l as $item)
+                      <option value="{{$item->language}}">
+                        @switch($item->language)
+                            @case('english')
+                              Английский
+                              @break
+                            @case('arabic')
+                              Арабский
+                            @break
+                            @case('chinese')
+                              Китайский
+                            @break
+                            @case('spanish')
+                              Испанский
+                            @break
+                          @endswitch
+                        </option>
+                      @endforeach
+                    @endif
                     @endisset
                     @isset($q2021_3_l)
-                      @if($year == "2021" && $quarter == "3")
-                        @foreach ($q2021_3_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
+                    @if(count($q2021_3_l) > 0)
+                      @foreach ($q2021_3_l as $item)
+                      <option value="{{$item->language}}">
+                        @switch($item->language)
+                            @case('english')
+                              Английский
+                              @break
+                            @case('arabic')
+                              Арабский
+                            @break
+                            @case('chinese')
+                              Китайский
+                            @break
+                            @case('spanish')
+                              Испанский
+                            @break
+                          @endswitch
+                        </option>
+                      @endforeach
+                    @endif
                     @endisset
                     @isset($q2021_4_l)
-                      @if($year == "2021" && $quarter == "4")
-                        @foreach ($q2021_4_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
-                    @endisset
-                    @isset($q2022_1_l)
-                      @if($year == "2022" && $quarter == "1")
-                        @foreach ($q2022_1_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
-                    @endisset
-                    @isset($q2022_2_l)
-                      @if($year == "2022" && $quarter == "2")
-                        @foreach ($q2022_2_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
-                    @endisset
-                    @isset($q2022_3_l)
-                      @if($year == "2022" && $quarter == "3")
-                        @foreach ($q2022_3_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
-                    @endisset
-                    @isset($q2022_4_l)
-                      @if($year == "2022" && $quarter == "4")
-                        @foreach ($q2022_4_l as $item)
-                          <option value="{{$item->language}}">{{$item->translated_lang}}</option>
-                        @endforeach
-                      @endif
+                    @if(count($q2021_4_l) > 0)
+                      @foreach ($q2021_4_l as $item)
+                      <option value="{{$item->language}}">
+                        @switch($item->language)
+                            @case('english')
+                              Английский
+                              @break
+                            @case('arabic')
+                              Арабский
+                            @break
+                            @case('chinese')
+                              Китайский
+                            @break
+                            @case('spanish')
+                              Испанский
+                            @break
+                          @endswitch
+                        </option>
+                      @endforeach
+                    @endif
                     @endisset
 
 
             </select>
+</div>
             <button type="submit" class="btn btn-primary">Показать</button>
       </form>
 
@@ -376,7 +470,16 @@ google.charts.load('current', {
 
 
 
-      
+</div>
+
+
+
+
+
+
+
+
+
 
       </div>
       @endif
@@ -441,6 +544,7 @@ google.charts.load('current', {
 
 $("#mapKvartal").change(function() {
   chosenKvartal = this.value;
+
   
   $("#mapLang").empty();
   chosenYearV = $("#mapYear").val();
@@ -449,85 +553,91 @@ $("#mapKvartal").change(function() {
 
     switch (chosenKvartal) {
     case "1":
-      @if($year == "2021" && $quarter == "1")
+      @isset($q2021_1_l)
                     @if(count($q2021_1_l) > 0)
                       @foreach ($q2021_1_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
       case "2":
-      @if($year == "2021" && $quarter == "2")
+            @isset($q2021_2_l)
                     @if(count($q2021_2_l) > 0)
                       @foreach ($q2021_2_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
       case "3":
-      @if($year == "2021" && $quarter == "3")
+            @isset($q2021_3_l)
                     @if(count($q2021_3_l) > 0)
                       @foreach ($q2021_3_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
       case "4":
-      @if($year == "2021" && $quarter == "4")
+            @isset($q2021_4_l)
                     @if(count($q2021_4_l) > 0)
                       @foreach ($q2021_4_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
   }
   }
 
 
   else if (chosenYearV == "2022") {
+
+    console.log(chosenYearV)
+    console.log(chosenKvartal)
+
 switch (chosenKvartal) {
-  case "1":
-      @if($year == "2022" && $quarter == "1")
-                    @if(count($q2022_1_l) > 0)
-                      @foreach ($q2022_1_l as $item)
+case "1":
+
+@isset($q2022_1_l)
+@if(count($q2022_1_l) > 0)
+@foreach ($q2022_1_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
-                      @endforeach
-                    @endif
-      @endif
-      break;
+@endforeach
+@endif
+@endisset
+break;
       case "2":
-      @if($year == "2022" && $quarter == "2")
+            @isset($q2022_2_l)
                     @if(count($q2022_2_l) > 0)
                       @foreach ($q2022_2_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
       case "3":
-      @if($year == "2022" && $quarter == "3")
+            @isset($q2022_3_l)
                     @if(count($q2022_3_l) > 0)
                       @foreach ($q2022_3_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
       case "4":
-      @if($year == "2022" && $quarter == "4")
+            @isset($q2022_4_l)
                     @if(count($q2022_4_l) > 0)
                       @foreach ($q2022_4_l as $item)
 $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_lang}}</option>');
                       @endforeach
                     @endif
-      @endif
+            @endisset
       break;
   }
   }
+
 
 
 
@@ -538,9 +648,25 @@ $("#mapLang").append('<option value="{{$item->language}}">{{$item->translated_la
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $("#mapYear").change(function () {
 chosenYear = this.value;
-
 
 switch (chosenYear) {
 case "2021":
@@ -548,28 +674,28 @@ $("#mapKvartal").empty();
 @isset($q2021_1_q)
 @if(count($q2021_1_q) > 0)
 @foreach ($q2021_1_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2021_2_q)
 @if(count($q2021_2_q) > 0)
 @foreach ($q2021_2_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2021_3_q)
 @if(count($q2021_3_q) > 0)
 @foreach ($q2021_3_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2021_4_q)
 @if(count($q2021_4_q) > 0)
 @foreach ($q2021_4_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
@@ -579,28 +705,28 @@ $("#mapKvartal").empty();
 @isset($q2022_1_q)
 @if(count($q2022_1_q) > 0)
 @foreach ($q2022_1_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2022_2_q)
 @if(count($q2022_2_q) > 0)
 @foreach ($q2022_2_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2022_3_q)
 @if(count($q2022_3_q) > 0)
 @foreach ($q2022_3_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
 @isset($q2022_4_q)
 @if(count($q2022_4_q) > 0)
 @foreach ($q2022_4_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
 @endforeach
 @endif
 @endisset
@@ -609,9 +735,7 @@ break;
     
 });
 
-
 </script>
-
 
 
 
