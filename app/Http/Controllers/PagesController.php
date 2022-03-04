@@ -426,24 +426,8 @@ class PagesController extends Controller
         $data = DB::select("select * from $language WHERE year = $year AND quarter = $quarter ORDER BY id ASC");
 
         if (count($data) > 0) {
-            $q2022 = DB::table('data_tables')
-            ->select('*', DB::raw('count(*) as total'))
-            ->where("year", '2022')
-            ->groupBy('year')
-            ->get();
-
-       $q2022_1_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 1 ORDER BY id ASC");
-       $q2022_2_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 2 ORDER BY id ASC");
-       $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
-       $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
-
-
-            return view('dashboard')->with('ErrorMsg', 'Данная запись уже существует')
-            ->with('q2022_1_l', $q2022_1_l)
-            ->with('q2022_2_l', $q2022_2_l)
-            ->with('q2022_3_l', $q2022_3_l)
-            ->with('q2022_4_l', $q2022_4_l)
-            ->with('q2022', $q2022);
+            return redirect()->route('dashboard')
+            ->withErrors(['msg' => 'Данная запись уже существует']);
         }
 
         else {

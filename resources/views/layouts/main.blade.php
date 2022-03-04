@@ -164,7 +164,6 @@
 
 <!-- JS -->
 <script src="{{ asset('js/script.js') }}"></script>
-<script src="{{ asset('js/isoConvert.js') }}"></script>
 
 
 <script>
@@ -308,28 +307,28 @@ $("#mapYear").change(function () {
             @isset($q2021_1_q)
                     @if(count($q2021_1_q) > 0)
                       @foreach ($q2021_1_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2021_2_q)
                     @if(count($q2021_2_q) > 0)
                       @foreach ($q2021_2_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2021_3_q)
                     @if(count($q2021_3_q) > 0)
                       @foreach ($q2021_3_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2021_4_q)
                     @if(count($q2021_4_q) > 0)
                       @foreach ($q2021_4_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
@@ -339,28 +338,28 @@ $("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->qu
             @isset($q2022_1_q)
                     @if(count($q2022_1_q) > 0)
                       @foreach ($q2022_1_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2022_2_q)
                     @if(count($q2022_2_q) > 0)
                       @foreach ($q2022_2_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2022_3_q)
                     @if(count($q2022_3_q) > 0)
                       @foreach ($q2022_3_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
             @isset($q2022_4_q)
                     @if(count($q2022_4_q) > 0)
                       @foreach ($q2022_4_q as $item)
-$("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->quarter}} квартал</option>');
                       @endforeach
                     @endif
             @endisset
@@ -370,6 +369,7 @@ $("#mapKvartal").append('<option selected value="{{$item->quarter}}">{{$item->qu
 });
 
 </script>
+
 
 
 </body>

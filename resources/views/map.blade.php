@@ -77,8 +77,6 @@ google.charts.load('current', {
         ztData += "<div id='closeMapButton' onclick='closeMapF()'>✕</div>";
         mtooltip.innerHTML = ztData;
 
-        
-        console.log(ztData);
         //window.open('http://' + data.getValue(selection[0].row, 2), '_blank');
       }
     });
@@ -134,31 +132,57 @@ google.charts.load('current', {
     return '<div>' +
         '<h1>' + name +
         '</h1>' + '<hr>' + 
+        '<p>Упоминания о коррупции по запросу</p>' + 
+        '<p> <span onclick="cptobuff()" class="countr-tooltip" id="cptobuff" title="Кликните чтобы скоировать в буффер обмена"><i>'+ getCountryName(isoCode) + '</i></span>: <b>' + mentions + '</b>' +
+        '<p>Население: <b>' + population + ' тыс. </b> человек' + 
+        '<hr>' +
         '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
-        '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
-        '<p>Изменение за квартал: ' +  valueSign +
-        '<hr>' + 
-        '<p>Упоминания о коррупции по запросу "<b><i><u>'+ getCountryName(isoCode) + ' corruption</u></i></b>": ' + mentions +
-        '<p>Население: <b>' + population + '</b> тысяч человек';
+        '<p>Медианный показатель по миру: <b>' + median + '</b></p>';
+        
+
 
     @else 
     return '<div>' +
         '<h1>' + name +
         '</h1>' + '<hr>' + 
-        '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
-        '<p>Медианный показатель по миру: <b>' + median + '</b></p>' +
+        '<p>Упоминания о коррупции по запросу</p>' + 
+        '<p> <span onclick="cptobuff()" class="countr-tooltip" id="cptobuff" title="Кликните чтобы скоировать в буффер обмена"><i>'+ getCountryName(isoCode) + '</i></span>: <b>' + mentions + '</b>' +
+        '<p>Население: <b>' + population + ' тыс.</b> человек' + 
         '<hr>' + 
-        '<p>Упоминания о коррупции по запросу "<b><i><u>'+ getCountryName(isoCode) + ' corruption</u></i></b>": ' + mentions +
-        '<p>Население: <b>' + population + '</b> тысяч человек';
+        '<p>Упоминаний о коррупции на человека: <b>' + formatValue + '</b></p>' +
+        '<p>Медианный показатель по миру: <b>' + median + '</b></p>';
     @endif
   }
 
 
 
+  function cptobuff() {
+    let a = document.getElementById('cptobuff').textContent;
+    copy(a);
+    let b = document.getElementById('map-toast');
+    b.classList.add('animate-map-toast');
+    setTimeout(function(){
+            b.classList.remove('animate-map-toast');
+      }, 2000);
+  }
+
+  function copy(text) {
+    var input = document.createElement('textarea');
+    input.innerHTML = text;
+    document.body.appendChild(input);
+    input.select();
+    var result = document.execCommand('copy');
+    document.body.removeChild(input);
+    return result;
+}
+
   
 
     </script>
 
+<div id="map-toast">
+    Текст успешно скопирован в буффер обмена!
+</div>
 
 
 <div id="map-tooltip">
@@ -189,11 +213,20 @@ google.charts.load('current', {
 
 
 
-
-
-
-
        <div class="mb-5" id="regions_div">
        </div>
+
+       @if ($language == "spanish")
+       <script src="{{ asset('js/isoConvertSpanish.js') }}"></script>
+       @elseif ($language == "english")
+       <script src="{{ asset('js/isoConvert.js') }}"></script>
+       @elseif ($language == "arabic")
+       <script src="{{ asset('js/isoConvertArabic.js') }}"></script>
+       @elseif ($language == "chinese")
+       <script src="{{ asset('js/isoConvertChinese.js') }}"></script>
+       @endif
+    
+
+
 
 @endsection

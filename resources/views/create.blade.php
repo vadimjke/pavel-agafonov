@@ -35,9 +35,15 @@
 
             var rarr = [ 0.2, 0.4, 0.6, 0.8, 1 ];
             var random = rarr[Math.floor(Math.random() * rarr.length)];
-            $(".col-3").each(function(){
-                $(this).find('input').val(random);
-      })
+    //         $(".col-3").each(function(){
+    //             $(this).find('input').val(random);
+    //   })
+
+     let inputs = $(".col-3").find('input');
+
+      for (var i=0; i<inputs.length;i++) {
+          inputs[i].value = random;
+      }
     }
             </script>
 

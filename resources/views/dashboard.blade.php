@@ -9,9 +9,11 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endif
-@if(!empty($ErrorMsg))
+
+
+@if($errors->any())
 <div class="alert alert-danger alert-dismissible fade show w-50 mx-auto" role="alert">
-    {{$ErrorMsg}}
+    {{$errors->first()}}
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endif

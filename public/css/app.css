@@ -123,14 +123,31 @@ font-size: 26px;
 #map-tooltip {
     position: fixed;
     bottom: 100px;
-    left: -300px;
-    width: 300px;
+    left: -350px;
+    width: 350px;
     height: 250px;
     background-color: #fff;
     border: 1px solid black;
     z-index: 99999999;
     transition: all 0.5s;
     padding: 5px;
+}
+#map-toast {
+    position: fixed;
+    bottom: 90px;
+    left: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 18px;
+    z-index: 99999999;
+    transition: all 0.5s;
+    padding: 10px;
+    opacity: 0;
+}
+
+.animate-map-toast {
+    bottom: 200px !important;
+    opacity: 1 !important;
 }
 
 #map-tooltip h1 {
@@ -159,4 +176,14 @@ font-size: 26px;
     font-size: 20px;
     cursor: pointer;
     z-index: 999999999;
+}
+
+.countr-tooltip {
+    border:1px solid black;border-radius:10px; font-weight:bold; padding: 3px; font-size: 16px;margin-top:10px; margin-bottom:10px; display:inline-block;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.countr-tooltip:hover {
+    background-color: #000; color: #fff;
 }
