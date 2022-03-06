@@ -229,13 +229,13 @@ google.charts.load('current', {
         @csrf
 
         
-            <select class="form-select" id="mapYear" name="year">
+            <select class="form-select" id="mapYear" required name="year">
                 <option {{ $year == "2021" ? "selected" : "" }} value="2021">2021 год</option>
                 <option {{ $year == "2022" ? "selected" : "" }} value="2022">2022 год</option>
             </select>
 
 
-            <select class="form-select" id="mapKvartal" name="quarter">
+            <select class="form-select" required id="mapKvartal" name="quarter">
 
 
 
@@ -380,7 +380,7 @@ value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
 
              
             </select>
-            <select class="form-select" id="mapLang" name="language">
+            <select required class="form-select" id="mapLang" name="language">
                     @isset($q2021_1_l)
                       @if($year == "2021" && $quarter == "1")
                         @foreach ($q2021_1_l as $item)
