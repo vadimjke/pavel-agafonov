@@ -304,9 +304,15 @@ text {
     #formWrapperFix select {
         margin-bottom: 5px;
     }
+    #map-tooltip {
+        display: none;
+    }
 }
 
 
 .random-style {
     font-size: 14px;
 }
+
+
+

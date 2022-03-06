@@ -67,12 +67,17 @@ google.charts.load('current', {
 
   
     google.visualization.events.addListener(chart, 'select', function () {
+
+
+
       var selection = chart.getSelection();
+
       if (selection.length > 0) {
         var mtooltip = document.getElementById("map-tooltip");
 
-        mtooltip.classList.add("animate-map-tooltip");
+        lWidth = window.screen.width;
 
+        mtooltip.classList.add("animate-map-tooltip");
         
         let ztData = dataTable.getValue(selection[0].row, 2);
 
@@ -81,6 +86,10 @@ google.charts.load('current', {
 
         //window.open('http://' + data.getValue(selection[0].row, 2), '_blank');
       }
+
+
+
+
     });
     
 
@@ -97,6 +106,8 @@ google.charts.load('current', {
 
     chart.draw(dataTable, options);
   }
+
+
 
 
   // ==================== //
