@@ -41,7 +41,7 @@ google.charts.load('current', {
     ]);
 
     var options = {
-      colorAxis: {minValue: 0, maxValue: 1.2, colors: ['#FFFF40', '#FFFF00', '#FFBF00', '#FF8000', '#FF4000', '#FF0000']},
+      colorAxis: {minValue: 0, maxValue: 1.2, colors: ['#00FFFF', '#FFFF00', '#FFBF00', '#FF8000', '#FF4000', '#FF0000']},
       backgroundColor: '#81d4fa',
       datalessRegionColor: '#fff',
       focusTarget: 'category',
