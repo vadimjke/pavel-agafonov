@@ -13,14 +13,16 @@ class PagesController extends Controller
     {
 
         $datas = English::orderBy('id', 'ASC')
-        ->where('year', '2021')
-        ->where('quarter', '4')
+        ->where('year', '2022')
+        ->where('quarter', '1')
         ->get();
 
         // $quarters = DB::table('english')
         // ->select('quarter', DB::raw('count(*) as total'))
         // ->groupBy('quarter')
         // ->get();
+
+        $values = [];
 
 
         // langs 2021
@@ -121,8 +123,8 @@ class PagesController extends Controller
 
         return view('map')
             ->with('datas', $datas)
-            ->with('year', '2021')
-            ->with('quarter', '4')
+            ->with('year', '2022')
+            ->with('quarter', '1')
             ->with('language', 'english')
             ->with('q2022_1_l', $q2022_1_l)
             ->with('q2022_2_l', $q2022_2_l)
@@ -139,7 +141,8 @@ class PagesController extends Controller
             ->with('q2021_1_q', $q2021_1_q)
             ->with('q2021_2_q', $q2021_2_q)
             ->with('q2021_3_q', $q2021_3_q)
-            ->with('q2021_4_q', $q2021_4_q);
+            ->with('q2021_4_q', $q2021_4_q)
+            ->with('values', $values);
 
     }
 
