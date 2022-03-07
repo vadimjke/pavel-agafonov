@@ -5,15 +5,51 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
+
 var oldValue = [];
+
+
+
 @if($year == "2022")
     @foreach($values as $value)
       oldValue.push('{{$value->value}}');
     @endforeach
-    var medianL = '4.1';
-@else
-    var medianL = '3.8';
 @endif
+
+// Start Median
+function median(numbers) {
+    const sorted = numbers.slice().sort((a, b) => a - b);
+    const middle = Math.floor(sorted.length / 2);
+
+    if (sorted.length % 2 === 0) {
+        return (sorted[middle - 1] + sorted[middle]) / 2;
+    }
+
+    return sorted[middle];
+}
+
+var medianValues = [];
+@foreach ($datas as $data)
+medianValues.push({{$data->value}})
+@endforeach
+
+medianL = median(medianValues);
+// End Median
+
+function median(values){
+  if(values.length ===0) throw new Error("No inputs");
+
+  values.sort(function(a,b){
+    return a-b;
+  });
+
+  var half = Math.floor(values.length / 2);
+  
+  if (values.length % 2)
+    return values[half];
+  
+  return (values[half - 1] + values[half]) / 2.0;
+}
 
 
 google.charts.load('current', {
