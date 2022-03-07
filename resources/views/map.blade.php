@@ -635,13 +635,13 @@ $("#mapLang").append('<option {{ $language == $item->language ? "selected" : "" 
 
 }
 
-$("#mapKvartal").click(updateLangz);
+$("#mapKvartal").on('click touchstart', updateLangz);
 $("#mapYear").change(function(){
   
   updateLangz();
 });
 
-$("#mapYear").click(function () {
+$("#mapYear").on('click touchstart', function() {
 chosenYear = this.value;
 
 switch (chosenYear) {
