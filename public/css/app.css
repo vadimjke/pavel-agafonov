@@ -139,18 +139,7 @@ font-size: 26px;
     right: 20%;
 }
 
-#map-tooltip {
-    position: fixed;
-    bottom: 100px;
-    left: -350px;
-    width: 350px;
-    background-color: #fff;
-    border: 1px solid black;
-    z-index: 99999999;
-    transition: all 1s;
-    padding: 5px;
-    font-weight: bold;
-}
+
 
 #map-tooltip .col-12 h1 {
     font-size: 24px;
@@ -299,8 +288,6 @@ text {
     .google-visualization-tooltip{
 
      display:none !important;
-     opacity: 0;
-     z-index: 1;
     
     }
     #map-toast {
@@ -319,6 +306,18 @@ text {
     .animate-map-toast {
     opacity: 1 !important;
     }
+    #map-tooltip {
+        position: fixed;
+        bottom: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid black;
+        z-index: 99999999;
+        transition: all 1s;
+        padding: 5px;
+        font-weight: bold;
+        }
 }
 
 @media screen and (min-width: 841px) {
@@ -338,5 +337,19 @@ text {
 .animate-map-toast {
     bottom: 200px !important;
     opacity: 1 !important;
-}
+    }
+
+#map-tooltip {
+    position: fixed;
+    bottom: 100px;
+    left: -350px;
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid black;
+    z-index: 99999999;
+    transition: all 1s;
+    padding: 5px;
+    font-weight: bold;
+    }
+
 }
