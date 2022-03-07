@@ -635,13 +635,21 @@ $("#mapLang").append('<option {{ $language == $item->language ? "selected" : "" 
 
 }
 
-$("#mapKvartal").on('touchstart', updateLangz);
+function isTouchScreendevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints;      
+};
+
+if(isTouchScreendevice()){
+    alert("I am a touch screen device")
+}
+
+$("#mapKvartal").click(updateLangz);
 $("#mapYear").change(function(){
   
   updateLangz();
 });
 
-$("#mapYear").on('touchstart', function() {
+$("#mapYear").click(function () {
 chosenYear = this.value;
 
 switch (chosenYear) {
