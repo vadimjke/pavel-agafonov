@@ -299,6 +299,8 @@ text {
     .google-visualization-tooltip{
 
      display:none !important;
+     opacity: 0;
+     z-index: 1;
     
     }
     #map-toast {
