@@ -304,14 +304,17 @@ text {
     #formWrapperFix select {
         margin-bottom: 5px;
     }
-    #map-tooltip {
-        display: none;
-    }
+
 }
 
 @media screen and (max-width: 840px) {
 #support-img img {
         width: 100%;
         height: auto;
-}
+    }
+    .google-visualization-tooltip{
+
+     display:none !important;
+    
+    }
 }
