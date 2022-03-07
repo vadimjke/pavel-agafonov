@@ -160,6 +160,7 @@ google.charts.load('current', {
 
     mentions = prettify(mentions);
     population = prettify(population);
+    population = population + '.000';
 
 
     return '<div class="row">' +
