@@ -285,11 +285,7 @@ text {
         width: 100%;
         height: auto;
     }
-    .google-visualization-tooltip{
 
-     display:none !important;
-    
-    }
     #map-toast {
         position: fixed;
     background-color: #fff;
@@ -306,18 +302,7 @@ text {
     .animate-map-toast {
     opacity: 1 !important;
     }
-    #map-tooltip {
-        position: fixed;
-        bottom: 100px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        border: 1px solid black;
-        z-index: 99999999;
-        transition: all 1s;
-        padding: 5px;
-        font-weight: bold;
-        }
+
 }
 
 @media screen and (min-width: 841px) {

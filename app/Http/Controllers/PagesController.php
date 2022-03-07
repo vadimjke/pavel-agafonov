@@ -313,7 +313,8 @@ class PagesController extends Controller
         $q2022_3_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 3 ORDER BY id ASC");
         $q2022_4_l = DB::select("select language from data_tables WHERE year = 2022 AND quarter = 4 ORDER BY id ASC");
 
-        return redirect('/dashboard')->with('message', 'Запись успешно создана');
+        return redirect()->route('dashboard')
+            ->withErrors(['msg' => 'Запись успешно создана']);
 
         // dd($array);
     }
@@ -373,8 +374,8 @@ class PagesController extends Controller
 
 
 
-        return view("dashboard")
-            ->with('message', 'Запись была успешно обновлена');
+            return redirect()->route('dashboard')
+            ->withErrors(['msg' => 'Данная запись уже существует']);
     }
 
 
