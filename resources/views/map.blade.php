@@ -175,7 +175,7 @@ google.charts.load('current', {
         '<hr>' +
         '<div class="row"><div class="col-9">Упоминаний на человека</div><div class="col-3 text-end">' + value + '</div></div>' +
         '<hr>' +
-        '<div class="row"><div class="col-9">Медианный показатель по миру</div><div class="col-3 text-end">' + median + '</div></div>';
+        '<div class="row"><div class="col-9">Медианный показатель по миру</div><div class="col-3 text-end">' + medianL + '</div></div>';
 
   }
 
@@ -557,7 +557,7 @@ value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
 
 var updateKvz = function() {
   {
-chosenYear = this.value;
+chosenYear = $("#mapYear").val();
 
 switch (chosenYear) {
 case "2021":
