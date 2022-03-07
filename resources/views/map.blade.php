@@ -559,8 +559,8 @@ value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
         
        </div>
       <div id="map_customized">
-        <div class="hide_numbers" id="hn1">&nbsp;</div>
-        <div class="hide_numbers" id="hn2">&nbsp;</div>
+        <!-- <div class="hide_numbers" id="hn1">&nbsp;</div>
+        <div class="hide_numbers" id="hn2">&nbsp;</div> -->
 
         <div class="scale_numbers" id="sn1">0.2</div>
         <div class="scale_numbers" id="sn2">0.4</div>
