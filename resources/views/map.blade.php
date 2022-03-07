@@ -554,6 +554,84 @@ value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>
 
 
 
+var updateKvz = function() {
+  {
+chosenYear = this.value;
+
+switch (chosenYear) {
+case "2021":
+$("#mapKvartal").empty();
+@isset($q2021_1_q)
+@if(count($q2021_1_q) > 0)
+@foreach ($q2021_1_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2021_2_q)
+@if(count($q2021_2_q) > 0)
+@foreach ($q2021_2_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2021_3_q)
+@if(count($q2021_3_q) > 0)
+@foreach ($q2021_3_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2021_4_q)
+@if(count($q2021_4_q) > 0)
+@foreach ($q2021_4_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+break;
+case "2022":
+$("#mapKvartal").empty();
+@isset($q2022_1_q)
+@if(count($q2022_1_q) > 0)
+@foreach ($q2022_1_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2022_2_q)
+@if(count($q2022_2_q) > 0)
+@foreach ($q2022_2_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2022_3_q)
+@if(count($q2022_3_q) > 0)
+@foreach ($q2022_3_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+@isset($q2022_4_q)
+@if(count($q2022_4_q) > 0)
+@foreach ($q2022_4_q as $item)
+$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
+@endforeach
+@endif
+@endisset
+break;
+}
+
+
+
+updateLangz();
+
+
+    
+}
+        }
+
 
 var updateLangz = function() {
   
@@ -635,13 +713,26 @@ $("#mapLang").append('<option {{ $language == $item->language ? "selected" : "" 
 
 }
 
+
+
 function isTouchScreendevice() {
     return 'ontouchstart' in window || navigator.maxTouchPoints;      
 };
 
 if(isTouchScreendevice()){
-    alert("I am a touch screen device")
+    
+// Mobile update Form
+
+$("#mapKvartal").change(updateLangz);
+$("#mapYear").change(updateKvz);
+
 }
+
+
+else {
+
+  // Desktop update Form
+
 
 $("#mapKvartal").click(updateLangz);
 $("#mapYear").change(function(){
@@ -649,81 +740,12 @@ $("#mapYear").change(function(){
   updateLangz();
 });
 
-$("#mapYear").click(function () {
-chosenYear = this.value;
 
-switch (chosenYear) {
-case "2021":
-$("#mapKvartal").empty();
-@isset($q2021_1_q)
-@if(count($q2021_1_q) > 0)
-@foreach ($q2021_1_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2021_2_q)
-@if(count($q2021_2_q) > 0)
-@foreach ($q2021_2_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2021_3_q)
-@if(count($q2021_3_q) > 0)
-@foreach ($q2021_3_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2021_4_q)
-@if(count($q2021_4_q) > 0)
-@foreach ($q2021_4_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-break;
-case "2022":
-$("#mapKvartal").empty();
-@isset($q2022_1_q)
-@if(count($q2022_1_q) > 0)
-@foreach ($q2022_1_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2022_2_q)
-@if(count($q2022_2_q) > 0)
-@foreach ($q2022_2_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2022_3_q)
-@if(count($q2022_3_q) > 0)
-@foreach ($q2022_3_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-@isset($q2022_4_q)
-@if(count($q2022_4_q) > 0)
-@foreach ($q2022_4_q as $item)
-$("#mapKvartal").append('<option  value="{{$item->quarter}}">{{$item->translated_quarter}} квартал</option>');
-@endforeach
-@endif
-@endisset
-break;
+// updatekvz
+$("#mapYear").click(updateKvz);
+
 }
 
-
-
-updateLangz();
-
-
-    
-});
 
 
 </script>
