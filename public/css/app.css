@@ -309,10 +309,9 @@ text {
     }
 }
 
-
-.random-style {
-    font-size: 14px;
+@media screen and (max-width: 840px) {
+#support-img img {
+        width: 100%;
+        height: auto;
 }
-
-
-
+}

@@ -635,25 +635,14 @@ $("#mapLang").append('<option {{ $language == $item->language ? "selected" : "" 
 
 }
 
-
-
-
-
 $("#mapKvartal").click(updateLangz);
 $("#mapYear").change(function(){
   
   updateLangz();
 });
 
-
-
 $("#mapYear").click(function () {
 chosenYear = this.value;
-
-
-
-
-
 
 switch (chosenYear) {
 case "2021":

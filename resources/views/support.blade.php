@@ -6,9 +6,9 @@
 
 <h3 class="mb-5">Вы можете поддержать автора переводом на карту:</h3>
 
-<a href="/support">
-    <img src="/img/support.png">
-</a>
+<div id="support-img">
+    <img src="/img/support.png" >
+</div>
 
 </div>
 
