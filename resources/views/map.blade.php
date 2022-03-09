@@ -54,7 +54,7 @@ function median(values){
 
 google.charts.load('current', {
     'packages':['geochart'],
-    'mapsApiKey': 'AIzaSyDXKb5LJbTf4XYJ1060yyVZ0P7yR7agLE8',
+    'mapsApiKey': 'AIzaSyB9RMt-9DoCOKfv3CCUH5WepYhuNU6qtME',
     'language': 'ru'
   });
   google.charts.setOnLoadCallback(drawRegionsMap);
