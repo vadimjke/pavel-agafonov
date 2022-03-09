@@ -204,7 +204,7 @@ google.charts.load('current', {
         '</h1></div></div>' + 
         '<div class="row">' + '<div class="col-12"> ' + rquarter + ' Квартал ' + tyear + ' </div></div><hr>' +
         '<div class="row">' + '<div class="col-12">По запросу' + 
-        '<span onclick="cptobuff()" class="countr-tooltip" id="cptobuff" title="Кликните чтобы скоировать в буффер обмена"><i>'+ getCountryName(isoCode) + '</i></span>' +
+        '<span onclick="cptobuff()" class="countr-tooltip" id="cptobuff" title="Кликните чтобы скоировать в буфер обмена"><i>'+ getCountryName(isoCode) + '</i></span>' +
         '</div></div>' +
         '<div class="row"><div class="col-6">Упоминания</div><div class="col-6 text-end float-right">' + mentions + '</div></div>' +
         '<div class="row"><div class="col-6">Население</div><div class="col-6 text-end">' + population + '</div></div>' + 
